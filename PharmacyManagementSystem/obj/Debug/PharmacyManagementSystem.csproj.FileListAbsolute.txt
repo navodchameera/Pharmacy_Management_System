@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\bin\Debug\PharmacyManagementSystem.exe.config
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\bin\Debug\PharmacyManagementSystem.exe
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\bin\Debug\PharmacyManagementSystem.pdb
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\bin\Debug\Guna.UI2.dll
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.FormLogin.resources
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.Properties.Resources.resources
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\Pharmacy.3F0D6835.Up2Date
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.exe
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.pdb
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.exe.config
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.FormDashbord.resources
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.UserControlDashboard.resources

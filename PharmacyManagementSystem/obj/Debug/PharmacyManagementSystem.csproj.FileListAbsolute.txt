@@ -13,3 +13,4 @@ C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem
 C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.exe.config
 C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.FormDashbord.resources
 C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.UserControlDashboard.resources
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.UserControlSettings.resources

@@ -153,5 +153,10 @@ namespace PharmacyManagementSystem
 
             
         }
+
+        private void buttonSettings_Click(object sender, EventArgs e)
+        {
+            LoadControl(new UserControlSettings());
+        }
     }
 }

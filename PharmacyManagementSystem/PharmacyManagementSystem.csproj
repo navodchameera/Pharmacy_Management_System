@@ -72,6 +72,12 @@
     <Compile Include="UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSettings.Designer.cs">
+      <DependentUpon>UserControlSettings.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormDashbord.resx">
       <DependentUpon>FormDashbord.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSettings.resx">
+      <DependentUpon>UserControlSettings.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

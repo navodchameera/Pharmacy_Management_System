@@ -168,6 +168,7 @@
             this.buttonEmployee.Text = "Employee";
             this.buttonEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonEmployee.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonEmployee.Click += new System.EventHandler(this.buttonEmployee_Click);
             // 
             // buttonSettings
             // 

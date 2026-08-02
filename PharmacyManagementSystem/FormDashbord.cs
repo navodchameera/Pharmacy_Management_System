@@ -96,6 +96,12 @@ namespace PharmacyManagementSystem
             buttonSupplier.FillColor = Color.Transparent;
             buttonSupplier.FillColor2 = Color.Transparent;
 
+            buttonEmployee.FillColor = Color.Transparent;
+            buttonEmployee.FillColor2 = Color.Transparent;
+
+            buttonSettings.FillColor = Color.Transparent;
+            buttonSettings.FillColor2 = Color.Transparent;
+
             LoadControl(new UserControlDashboard());
         }
 
@@ -115,7 +121,13 @@ namespace PharmacyManagementSystem
             buttonSupplier.FillColor = Color.Transparent;
             buttonSupplier.FillColor2 = Color.Transparent;
 
+            buttonEmployee.FillColor = Color.Transparent;
+            buttonEmployee.FillColor2 = Color.Transparent;
 
+            buttonSettings.FillColor = Color.Transparent;
+            buttonSettings.FillColor2 = Color.Transparent;
+
+            LoadControl(new UserControlMedicine());
         }
 
         private void buttonDispence_Click(object sender, EventArgs e)
@@ -133,6 +145,14 @@ namespace PharmacyManagementSystem
 
             buttonSupplier.FillColor = Color.Transparent;
             buttonSupplier.FillColor2 = Color.Transparent;
+
+            buttonEmployee.FillColor = Color.Transparent;
+            buttonEmployee.FillColor2 = Color.Transparent;
+
+            buttonSettings.FillColor = Color.Transparent;
+            buttonSettings.FillColor2 = Color.Transparent;
+
+            LoadControl(new UserControldispense());
         }
 
         private void buttonSupplier_Click(object sender, EventArgs e)
@@ -151,12 +171,68 @@ namespace PharmacyManagementSystem
             buttonDispence.FillColor = Color.Transparent;
             buttonDispence.FillColor2 = Color.Transparent;
 
+            buttonEmployee.FillColor = Color.Transparent;
+            buttonEmployee.FillColor2 = Color.Transparent;
+
+            buttonSettings.FillColor = Color.Transparent;
+            buttonSettings.FillColor2 = Color.Transparent;
+
+        }
+
+        private void buttonEmployee_Click(object sender, EventArgs e)
+        {
+            //to hightlight that it is selected
+            buttonEmployee.FillColor = Color.FromArgb(165, 207, 235);
+            buttonEmployee.FillColor2 = Color.FromArgb(165, 207, 235);
+
+
+            //change others to normal colour
+            buttonDashboard.FillColor = Color.Transparent;
+            buttonDashboard.FillColor2 = Color.Transparent;
+
+            buttonMedicine.FillColor = Color.Transparent;
+            buttonMedicine.FillColor2 = Color.Transparent;
+
+            buttonDispence.FillColor = Color.Transparent;
+            buttonDispence.FillColor2 = Color.Transparent;
+
+            buttonSupplier.FillColor = Color.Transparent;
+            buttonSupplier.FillColor2 = Color.Transparent;
+
+            buttonSettings.FillColor = Color.Transparent;
+            buttonSettings.FillColor2 = Color.Transparent;
+
             
         }
 
         private void buttonSettings_Click(object sender, EventArgs e)
         {
+            //to hightlight that it is selected
+            buttonSettings.FillColor = Color.FromArgb(165, 207, 235);
+            buttonSettings.FillColor2 = Color.FromArgb(165, 207, 235);
+
+
+            //change others to normal colour
+            buttonDashboard.FillColor = Color.Transparent;
+            buttonDashboard.FillColor2 = Color.Transparent;
+
+            buttonMedicine.FillColor = Color.Transparent;
+            buttonMedicine.FillColor2 = Color.Transparent;
+
+            buttonDispence.FillColor = Color.Transparent;
+            buttonDispence.FillColor2 = Color.Transparent;
+
+            buttonSupplier.FillColor = Color.Transparent;
+            buttonSupplier.FillColor2 = Color.Transparent;
+
+            buttonEmployee.FillColor = Color.Transparent;
+            buttonEmployee.FillColor2 = Color.Transparent;
+
+            
+
             LoadControl(new UserControlSettings());
         }
+
+        
     }
 }

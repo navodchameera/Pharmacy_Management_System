@@ -52,6 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDashbord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +79,27 @@
     <Compile Include="UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlDispense .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDispense .Designer.cs">
+      <DependentUpon>UserControlDispense .cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMedicine.Designer.cs">
+      <DependentUpon>UserControlMedicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlSettings.Designer.cs">
       <DependentUpon>UserControlSettings.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDashbord.resx">
       <DependentUpon>FormDashbord.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +117,12 @@
     </Compile>
     <EmbeddedResource Include="UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDispense .resx">
+      <DependentUpon>UserControlDispense .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMedicine.resx">
+      <DependentUpon>UserControlMedicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlSettings.resx">
       <DependentUpon>UserControlSettings.cs</DependentUpon>

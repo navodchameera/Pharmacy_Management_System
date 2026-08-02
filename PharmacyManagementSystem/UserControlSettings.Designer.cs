@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlSettings));
             this.label1 = new System.Windows.Forms.Label();
             this.panelSettings = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonAbout = new Guna.UI2.WinForms.Guna2Button();
+            this.panelUnderChangePassword = new Guna.UI2.WinForms.Guna2Panel();
             this.panelChangePassword = new Guna.UI2.WinForms.Guna2Panel();
             this.buttonChangePassword = new Guna.UI2.WinForms.Guna2GradientButton();
             this.buttonShowPasswords = new Guna.UI2.WinForms.Guna2Button();
@@ -43,13 +45,13 @@
             this.labelCurrentPassword = new System.Windows.Forms.Label();
             this.buttonChangePasswordCollapse = new Guna.UI2.WinForms.Guna2Button();
             this.buttonChangePasswordExpand = new Guna.UI2.WinForms.Guna2Button();
+            this.panelUnderChangeUsername = new Guna.UI2.WinForms.Guna2Panel();
             this.panelChangeUsername = new Guna.UI2.WinForms.Guna2Panel();
             this.buttonChangeUsername = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.textBoxUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxNewUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelNewUsername = new System.Windows.Forms.Label();
             this.buttonChangeUsernameCollapse = new Guna.UI2.WinForms.Guna2Button();
             this.buttonChangeUsernameExpand = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonAbout = new Guna.UI2.WinForms.Guna2Button();
             this.panelSettings.SuspendLayout();
             this.panelChangePassword.SuspendLayout();
             this.panelChangeUsername.SuspendLayout();
@@ -70,9 +72,11 @@
             // 
             this.panelSettings.AutoScroll = true;
             this.panelSettings.Controls.Add(this.buttonAbout);
+            this.panelSettings.Controls.Add(this.panelUnderChangePassword);
             this.panelSettings.Controls.Add(this.panelChangePassword);
             this.panelSettings.Controls.Add(this.buttonChangePasswordCollapse);
             this.panelSettings.Controls.Add(this.buttonChangePasswordExpand);
+            this.panelSettings.Controls.Add(this.panelUnderChangeUsername);
             this.panelSettings.Controls.Add(this.panelChangeUsername);
             this.panelSettings.Controls.Add(this.buttonChangeUsernameCollapse);
             this.panelSettings.Controls.Add(this.buttonChangeUsernameExpand);
@@ -80,6 +84,42 @@
             this.panelSettings.Name = "panelSettings";
             this.panelSettings.Size = new System.Drawing.Size(640, 500);
             this.panelSettings.TabIndex = 1;
+            // 
+            // buttonAbout
+            // 
+            this.buttonAbout.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAbout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
+            this.buttonAbout.BorderRadius = 9;
+            this.buttonAbout.BorderThickness = 1;
+            this.buttonAbout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonAbout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonAbout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonAbout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonAbout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAbout.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonAbout.Font = new System.Drawing.Font("Leelawadee UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
+            this.buttonAbout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(207)))), ((int)(((byte)(235)))));
+            this.buttonAbout.Image = ((System.Drawing.Image)(resources.GetObject("buttonAbout.Image")));
+            this.buttonAbout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonAbout.ImageOffset = new System.Drawing.Point(20, 0);
+            this.buttonAbout.Location = new System.Drawing.Point(0, 683);
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(207)))), ((int)(((byte)(235)))));
+            this.buttonAbout.Size = new System.Drawing.Size(623, 60);
+            this.buttonAbout.TabIndex = 21;
+            this.buttonAbout.Text = "About";
+            this.buttonAbout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonAbout.TextOffset = new System.Drawing.Point(20, 0);
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
+            // 
+            // panelUnderChangePassword
+            // 
+            this.panelUnderChangePassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUnderChangePassword.Location = new System.Drawing.Point(0, 673);
+            this.panelUnderChangePassword.Name = "panelUnderChangePassword";
+            this.panelUnderChangePassword.Size = new System.Drawing.Size(623, 10);
+            this.panelUnderChangePassword.TabIndex = 20;
             // 
             // panelChangePassword
             // 
@@ -93,10 +133,10 @@
             this.panelChangePassword.Controls.Add(this.label2);
             this.panelChangePassword.Controls.Add(this.labelCurrentPassword);
             this.panelChangePassword.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelChangePassword.Location = new System.Drawing.Point(0, 406);
+            this.panelChangePassword.Location = new System.Drawing.Point(0, 416);
             this.panelChangePassword.Name = "panelChangePassword";
             this.panelChangePassword.Size = new System.Drawing.Size(623, 257);
-            this.panelChangePassword.TabIndex = 16;
+            this.panelChangePassword.TabIndex = 19;
             // 
             // buttonChangePassword
             // 
@@ -138,7 +178,7 @@
             this.buttonShowPasswords.PressedDepth = 0;
             this.buttonShowPasswords.Size = new System.Drawing.Size(25, 25);
             this.buttonShowPasswords.TabIndex = 12;
-            this.buttonShowPasswords.Click += new System.EventHandler(this.buttonShowPasswords_Click_1);
+            this.buttonShowPasswords.Click += new System.EventHandler(this.buttonShowPasswords_Click);
             // 
             // buttonHidePasswords
             // 
@@ -159,7 +199,7 @@
             this.buttonHidePasswords.PressedDepth = 0;
             this.buttonHidePasswords.Size = new System.Drawing.Size(25, 25);
             this.buttonHidePasswords.TabIndex = 13;
-            this.buttonHidePasswords.Click += new System.EventHandler(this.buttonHidePasswords_Click_1);
+            this.buttonHidePasswords.Click += new System.EventHandler(this.buttonHidePasswords_Click);
             // 
             // textBoxConfirmNewPassword
             // 
@@ -281,15 +321,15 @@
             this.buttonChangePasswordCollapse.Image = ((System.Drawing.Image)(resources.GetObject("buttonChangePasswordCollapse.Image")));
             this.buttonChangePasswordCollapse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.buttonChangePasswordCollapse.ImageOffset = new System.Drawing.Point(20, 0);
-            this.buttonChangePasswordCollapse.Location = new System.Drawing.Point(0, 346);
+            this.buttonChangePasswordCollapse.Location = new System.Drawing.Point(0, 356);
             this.buttonChangePasswordCollapse.Name = "buttonChangePasswordCollapse";
             this.buttonChangePasswordCollapse.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(207)))), ((int)(((byte)(235)))));
             this.buttonChangePasswordCollapse.Size = new System.Drawing.Size(623, 60);
-            this.buttonChangePasswordCollapse.TabIndex = 15;
+            this.buttonChangePasswordCollapse.TabIndex = 18;
             this.buttonChangePasswordCollapse.Text = "Change Password";
             this.buttonChangePasswordCollapse.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonChangePasswordCollapse.TextOffset = new System.Drawing.Point(20, 0);
-            this.buttonChangePasswordCollapse.Click += new System.EventHandler(this.buttonChangePasswordCollapse_Click_1);
+            this.buttonChangePasswordCollapse.Click += new System.EventHandler(this.buttonChangePasswordCollapse_Click);
             // 
             // buttonChangePasswordExpand
             // 
@@ -309,20 +349,28 @@
             this.buttonChangePasswordExpand.Image = ((System.Drawing.Image)(resources.GetObject("buttonChangePasswordExpand.Image")));
             this.buttonChangePasswordExpand.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.buttonChangePasswordExpand.ImageOffset = new System.Drawing.Point(20, 0);
-            this.buttonChangePasswordExpand.Location = new System.Drawing.Point(0, 286);
+            this.buttonChangePasswordExpand.Location = new System.Drawing.Point(0, 296);
             this.buttonChangePasswordExpand.Name = "buttonChangePasswordExpand";
             this.buttonChangePasswordExpand.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(207)))), ((int)(((byte)(235)))));
             this.buttonChangePasswordExpand.Size = new System.Drawing.Size(623, 60);
-            this.buttonChangePasswordExpand.TabIndex = 14;
+            this.buttonChangePasswordExpand.TabIndex = 17;
             this.buttonChangePasswordExpand.Text = "Change Password";
             this.buttonChangePasswordExpand.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonChangePasswordExpand.TextOffset = new System.Drawing.Point(20, 0);
-            this.buttonChangePasswordExpand.Click += new System.EventHandler(this.buttonChangePasswordExpand_Click_1);
+            this.buttonChangePasswordExpand.Click += new System.EventHandler(this.buttonChangePasswordExpand_Click);
+            // 
+            // panelUnderChangeUsername
+            // 
+            this.panelUnderChangeUsername.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUnderChangeUsername.Location = new System.Drawing.Point(0, 286);
+            this.panelUnderChangeUsername.Name = "panelUnderChangeUsername";
+            this.panelUnderChangeUsername.Size = new System.Drawing.Size(623, 10);
+            this.panelUnderChangeUsername.TabIndex = 14;
             // 
             // panelChangeUsername
             // 
             this.panelChangeUsername.Controls.Add(this.buttonChangeUsername);
-            this.panelChangeUsername.Controls.Add(this.textBoxUsername);
+            this.panelChangeUsername.Controls.Add(this.textBoxNewUsername);
             this.panelChangeUsername.Controls.Add(this.labelNewUsername);
             this.panelChangeUsername.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelChangeUsername.Location = new System.Drawing.Point(0, 120);
@@ -351,28 +399,27 @@
             this.buttonChangeUsername.TabIndex = 14;
             this.buttonChangeUsername.Text = "Change";
             // 
-            // textBoxUsername
+            // textBoxNewUsername
             // 
-            this.textBoxUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.textBoxUsername.BorderRadius = 8;
-            this.textBoxUsername.BorderThickness = 2;
-            this.textBoxUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxUsername.DefaultText = "";
-            this.textBoxUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.ForeColor = System.Drawing.Color.Black;
-            this.textBoxUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxUsername.Location = new System.Drawing.Point(285, 31);
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.PasswordChar = '●';
-            this.textBoxUsername.PlaceholderText = "New Username";
-            this.textBoxUsername.SelectedText = "";
-            this.textBoxUsername.Size = new System.Drawing.Size(258, 40);
-            this.textBoxUsername.TabIndex = 9;
+            this.textBoxNewUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
+            this.textBoxNewUsername.BorderRadius = 8;
+            this.textBoxNewUsername.BorderThickness = 2;
+            this.textBoxNewUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxNewUsername.DefaultText = "";
+            this.textBoxNewUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxNewUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxNewUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxNewUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxNewUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxNewUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNewUsername.ForeColor = System.Drawing.Color.Black;
+            this.textBoxNewUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxNewUsername.Location = new System.Drawing.Point(285, 31);
+            this.textBoxNewUsername.Name = "textBoxNewUsername";
+            this.textBoxNewUsername.PlaceholderText = "New Username";
+            this.textBoxNewUsername.SelectedText = "";
+            this.textBoxNewUsername.Size = new System.Drawing.Size(258, 40);
+            this.textBoxNewUsername.TabIndex = 9;
             // 
             // labelNewUsername
             // 
@@ -442,33 +489,6 @@
             this.buttonChangeUsernameExpand.TextOffset = new System.Drawing.Point(20, 0);
             this.buttonChangeUsernameExpand.Click += new System.EventHandler(this.buttonChangeUsernameExpand_Click);
             // 
-            // buttonAbout
-            // 
-            this.buttonAbout.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAbout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.buttonAbout.BorderRadius = 9;
-            this.buttonAbout.BorderThickness = 1;
-            this.buttonAbout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonAbout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonAbout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonAbout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonAbout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonAbout.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonAbout.Font = new System.Drawing.Font("Leelawadee UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.buttonAbout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(207)))), ((int)(((byte)(235)))));
-            this.buttonAbout.Image = ((System.Drawing.Image)(resources.GetObject("buttonAbout.Image")));
-            this.buttonAbout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.buttonAbout.ImageOffset = new System.Drawing.Point(20, 0);
-            this.buttonAbout.Location = new System.Drawing.Point(0, 663);
-            this.buttonAbout.Name = "buttonAbout";
-            this.buttonAbout.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(207)))), ((int)(((byte)(235)))));
-            this.buttonAbout.Size = new System.Drawing.Size(623, 60);
-            this.buttonAbout.TabIndex = 17;
-            this.buttonAbout.Text = "About";
-            this.buttonAbout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.buttonAbout.TextOffset = new System.Drawing.Point(20, 0);
-            // 
             // UserControlSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -492,6 +512,14 @@
 
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel panelSettings;
+        private Guna.UI2.WinForms.Guna2Panel panelChangeUsername;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonChangeUsername;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxNewUsername;
+        private System.Windows.Forms.Label labelNewUsername;
+        private Guna.UI2.WinForms.Guna2Button buttonChangeUsernameCollapse;
+        private Guna.UI2.WinForms.Guna2Button buttonChangeUsernameExpand;
+        private Guna.UI2.WinForms.Guna2Panel panelUnderChangeUsername;
+        private Guna.UI2.WinForms.Guna2Panel panelUnderChangePassword;
         private Guna.UI2.WinForms.Guna2Panel panelChangePassword;
         private Guna.UI2.WinForms.Guna2GradientButton buttonChangePassword;
         private Guna.UI2.WinForms.Guna2Button buttonShowPasswords;
@@ -504,12 +532,6 @@
         private System.Windows.Forms.Label labelCurrentPassword;
         private Guna.UI2.WinForms.Guna2Button buttonChangePasswordCollapse;
         private Guna.UI2.WinForms.Guna2Button buttonChangePasswordExpand;
-        private Guna.UI2.WinForms.Guna2Panel panelChangeUsername;
-        private Guna.UI2.WinForms.Guna2GradientButton buttonChangeUsername;
-        private Guna.UI2.WinForms.Guna2TextBox textBoxUsername;
-        private System.Windows.Forms.Label labelNewUsername;
-        private Guna.UI2.WinForms.Guna2Button buttonChangeUsernameCollapse;
-        private Guna.UI2.WinForms.Guna2Button buttonChangeUsernameExpand;
         private Guna.UI2.WinForms.Guna2Button buttonAbout;
     }
 }

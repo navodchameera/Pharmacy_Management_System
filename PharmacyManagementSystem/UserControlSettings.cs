@@ -35,23 +35,31 @@ namespace PharmacyManagementSystem
 
         private void buttonChangeUsernameExpand_Click(object sender, EventArgs e)
         {
+
             //show panel when user presses expand
             panelChangeUsername.Show();
+
             //hide expand button and show collapse button
             buttonChangeUsernameExpand.Hide();
             buttonChangeUsernameCollapse.Show();
+
         }
 
         private void buttonChangeUsernameCollapse_Click(object sender, EventArgs e)
         {
+
             //hide panel when user presses collapse
             panelChangeUsername.Hide();
+
             //hide collapse and show expand button
-            buttonChangeUsernameCollapse.Hide();
             buttonChangeUsernameExpand.Show();
+            buttonChangeUsernameCollapse.Hide();
+            
+
+            
         }
 
-        private void buttonChangePasswordExpand_Click_1(object sender, EventArgs e)
+        private void buttonChangePasswordExpand_Click(object sender, EventArgs e)
         {
             //show panel when user presses expand
             panelChangePassword.Show();
@@ -61,17 +69,17 @@ namespace PharmacyManagementSystem
             buttonChangePasswordCollapse.Show();
         }
 
-        private void buttonChangePasswordCollapse_Click_1(object sender, EventArgs e)
+        private void buttonChangePasswordCollapse_Click(object sender, EventArgs e)
         {
-            //hide panel when user presses collapse
+            //show panel when user presses expand
             panelChangePassword.Hide();
 
-            //hide collapse and show expan button
-            buttonChangePasswordCollapse.Hide();
+            //hide expand button and show collapse button
             buttonChangePasswordExpand.Show();
+            buttonChangePasswordCollapse.Hide();
         }
 
-        private void buttonShowPasswords_Click_1(object sender, EventArgs e)
+        private void buttonShowPasswords_Click(object sender, EventArgs e)
         {
             //when show password is clicked hide the buttonShowPassword button and show the buttonHidePassword button 
             buttonShowPasswords.Hide();
@@ -83,7 +91,7 @@ namespace PharmacyManagementSystem
             textBoxConfirmNewPassword.PasswordChar = '\0';
         }
 
-        private void buttonHidePasswords_Click_1(object sender, EventArgs e)
+        private void buttonHidePasswords_Click(object sender, EventArgs e)
         {
             //when show password is clicked hide the buttonShowPassword button and show the buttonHidePassword button 
             buttonShowPasswords.Show();
@@ -95,6 +103,10 @@ namespace PharmacyManagementSystem
             textBoxConfirmNewPassword.PasswordChar = '●';
         }
 
-        
+        private void buttonAbout_Click(object sender, EventArgs e)
+        {
+            FormAbout loadAbout = new FormAbout();
+            loadAbout.Show();
+        }
     }
 }

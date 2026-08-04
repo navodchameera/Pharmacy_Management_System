@@ -174,7 +174,7 @@ namespace PharmacyManagementSystem
                 if (textBoxMedicineID.Text.Trim() != "" && textBoxMedicineName.Text.Trim() != "")
                 {
                     //check if primary key the user enterd already exsits
-                    string primaryKeyCheckSql = "SELECT * FROM Medicine WHERE MedicineID = '" + textBoxMedicineID.Text + "'";
+                    string primaryKeyCheckSql = "SELECT * FROM Medicine WHERE MedicineID = '"+textBoxMedicineID.Text+"'";
 
                     //creating db connecion to get connection object
                     DBConnection DBObj = new DBConnection();
@@ -279,23 +279,46 @@ namespace PharmacyManagementSystem
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-            "Are you sure you want to delete " + textBoxMedicineName.Text+"("+textBoxMedicineID.Text+")" +". This action cannot be undone.",
-            "Confirm Delete",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Warning
-            );
-
-            if (result == DialogResult.Yes)
+            try
             {
-                //there is no permenent delete in the system only can soft delete items
-                string sql = "UPDATE Medicine SET IsVisible = 0 WHERE MedicineID = '" + textBoxMedicineID.Text+"'";
-                DBConnection DBObj = new DBConnection();
-                SqlCommand com = new SqlCommand(sql, DBObj.connect());
-                com.ExecuteNonQuery();
-                MessageBox.Show(textBoxMedicineName.Text+" has been deleted successfully.","Success");
-                loadMedicineDGV();
+                //delete only if user selects something
+                //if nothing is selected textbox will be empty
+                if (textBoxMedicineID.Text.Trim() != "")
+                {
+                    DialogResult result = MessageBox.Show(
+                        "Are you sure you want to delete " + textBoxMedicineName.Text + "(" + textBoxMedicineID.Text + ")" + ". This action cannot be undone.",
+                        "Confirm Delete",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Warning
+                        );
+
+                    if (result == DialogResult.Yes)
+                    {
+                        //there is no permenent delete in the system only can soft delete items
+                        string sql = "UPDATE Medicine SET IsVisible = 0 WHERE MedicineID = '" + textBoxMedicineID.Text + "'";
+                        DBConnection DBObj = new DBConnection();
+                        SqlCommand com = new SqlCommand(sql, DBObj.connect());
+                        com.ExecuteNonQuery();
+                        MessageBox.Show(textBoxMedicineName.Text + " has been deleted successfully.", "Success");
+                        loadMedicineDGV();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("You need to select something to delete.", 
+                        "No Selection", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Warning
+                        );
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Something went worng. Try again \n\n" + ex.Message);
             }
         }
+
+        
     }
 }

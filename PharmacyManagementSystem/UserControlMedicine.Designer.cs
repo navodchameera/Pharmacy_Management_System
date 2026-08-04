@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMedicine));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelMedicine = new System.Windows.Forms.Label();
             this.labelMedicineID = new System.Windows.Forms.Label();
             this.labelMedicineName = new System.Windows.Forms.Label();
@@ -66,9 +66,10 @@
             this.labelMedicine.AutoSize = true;
             this.labelMedicine.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMedicine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(76)))), ((int)(((byte)(120)))));
-            this.labelMedicine.Location = new System.Drawing.Point(15, 22);
+            this.labelMedicine.Location = new System.Drawing.Point(21, -7);
+            this.labelMedicine.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMedicine.Name = "labelMedicine";
-            this.labelMedicine.Size = new System.Drawing.Size(119, 32);
+            this.labelMedicine.Size = new System.Drawing.Size(148, 41);
             this.labelMedicine.TabIndex = 1;
             this.labelMedicine.Text = "Medicine";
             // 
@@ -77,9 +78,10 @@
             this.labelMedicineID.AutoSize = true;
             this.labelMedicineID.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMedicineID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.labelMedicineID.Location = new System.Drawing.Point(17, 72);
+            this.labelMedicineID.Location = new System.Drawing.Point(23, 89);
+            this.labelMedicineID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMedicineID.Name = "labelMedicineID";
-            this.labelMedicineID.Size = new System.Drawing.Size(99, 21);
+            this.labelMedicineID.Size = new System.Drawing.Size(125, 28);
             this.labelMedicineID.TabIndex = 2;
             this.labelMedicineID.Text = "Medicine ID :";
             // 
@@ -88,9 +90,10 @@
             this.labelMedicineName.AutoSize = true;
             this.labelMedicineName.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMedicineName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.labelMedicineName.Location = new System.Drawing.Point(17, 119);
+            this.labelMedicineName.Location = new System.Drawing.Point(23, 146);
+            this.labelMedicineName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMedicineName.Name = "labelMedicineName";
-            this.labelMedicineName.Size = new System.Drawing.Size(126, 21);
+            this.labelMedicineName.Size = new System.Drawing.Size(158, 28);
             this.labelMedicineName.TabIndex = 3;
             this.labelMedicineName.Text = "Medicine Name :";
             // 
@@ -99,9 +102,10 @@
             this.labelQunatity.AutoSize = true;
             this.labelQunatity.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelQunatity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.labelQunatity.Location = new System.Drawing.Point(17, 167);
+            this.labelQunatity.Location = new System.Drawing.Point(23, 206);
+            this.labelQunatity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQunatity.Name = "labelQunatity";
-            this.labelQunatity.Size = new System.Drawing.Size(77, 21);
+            this.labelQunatity.Size = new System.Drawing.Size(97, 28);
             this.labelQunatity.TabIndex = 4;
             this.labelQunatity.Text = "Quantity :";
             // 
@@ -120,11 +124,12 @@
             this.textBoxMedicineID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMedicineID.ForeColor = System.Drawing.Color.Black;
             this.textBoxMedicineID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxMedicineID.Location = new System.Drawing.Point(147, 71);
+            this.textBoxMedicineID.Location = new System.Drawing.Point(196, 87);
+            this.textBoxMedicineID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxMedicineID.Name = "textBoxMedicineID";
             this.textBoxMedicineID.PlaceholderText = "Medicine ID";
             this.textBoxMedicineID.SelectedText = "";
-            this.textBoxMedicineID.Size = new System.Drawing.Size(189, 30);
+            this.textBoxMedicineID.Size = new System.Drawing.Size(252, 37);
             this.textBoxMedicineID.TabIndex = 9;
             this.textBoxMedicineID.TextChanged += new System.EventHandler(this.textBoxMedicineID_TextChanged);
             // 
@@ -133,9 +138,10 @@
             this.labelSellingPrice.AutoSize = true;
             this.labelSellingPrice.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSellingPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.labelSellingPrice.Location = new System.Drawing.Point(362, 72);
+            this.labelSellingPrice.Location = new System.Drawing.Point(483, 89);
+            this.labelSellingPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSellingPrice.Name = "labelSellingPrice";
-            this.labelSellingPrice.Size = new System.Drawing.Size(102, 21);
+            this.labelSellingPrice.Size = new System.Drawing.Size(127, 28);
             this.labelSellingPrice.TabIndex = 13;
             this.labelSellingPrice.Text = "Selling Price :";
             // 
@@ -154,11 +160,12 @@
             this.textBoxMedicineName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMedicineName.ForeColor = System.Drawing.Color.Black;
             this.textBoxMedicineName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxMedicineName.Location = new System.Drawing.Point(147, 117);
+            this.textBoxMedicineName.Location = new System.Drawing.Point(196, 144);
+            this.textBoxMedicineName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxMedicineName.Name = "textBoxMedicineName";
             this.textBoxMedicineName.PlaceholderText = "Medicine Name";
             this.textBoxMedicineName.SelectedText = "";
-            this.textBoxMedicineName.Size = new System.Drawing.Size(189, 30);
+            this.textBoxMedicineName.Size = new System.Drawing.Size(252, 37);
             this.textBoxMedicineName.TabIndex = 14;
             this.textBoxMedicineName.TextChanged += new System.EventHandler(this.textBoxMedicineName_TextChanged);
             // 
@@ -167,9 +174,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label2.Location = new System.Drawing.Point(362, 119);
+            this.label2.Location = new System.Drawing.Point(483, 146);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 21);
+            this.label2.Size = new System.Drawing.Size(128, 28);
             this.label2.TabIndex = 17;
             this.label2.Text = "Buying Price :";
             // 
@@ -178,9 +186,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label3.Location = new System.Drawing.Point(362, 167);
+            this.label3.Location = new System.Drawing.Point(483, 206);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 21);
+            this.label3.Size = new System.Drawing.Size(190, 28);
             this.label3.TabIndex = 19;
             this.label3.Text = "Low Stock Warning :";
             // 
@@ -200,11 +209,12 @@
             this.textBoxSearch.ForeColor = System.Drawing.Color.Black;
             this.textBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxSearch.IconLeft = ((System.Drawing.Image)(resources.GetObject("textBoxSearch.IconLeft")));
-            this.textBoxSearch.Location = new System.Drawing.Point(21, 241);
+            this.textBoxSearch.Location = new System.Drawing.Point(28, 297);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.PlaceholderText = "Search";
             this.textBoxSearch.SelectedText = "";
-            this.textBoxSearch.Size = new System.Drawing.Size(227, 30);
+            this.textBoxSearch.Size = new System.Drawing.Size(303, 37);
             this.textBoxSearch.TabIndex = 21;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
@@ -221,10 +231,11 @@
             this.buttonClearSearchBar.ForeColor = System.Drawing.Color.White;
             this.buttonClearSearchBar.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.buttonClearSearchBar.Image = ((System.Drawing.Image)(resources.GetObject("buttonClearSearchBar.Image")));
-            this.buttonClearSearchBar.Location = new System.Drawing.Point(219, 246);
+            this.buttonClearSearchBar.Location = new System.Drawing.Point(292, 303);
+            this.buttonClearSearchBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonClearSearchBar.Name = "buttonClearSearchBar";
             this.buttonClearSearchBar.PressedDepth = 0;
-            this.buttonClearSearchBar.Size = new System.Drawing.Size(20, 20);
+            this.buttonClearSearchBar.Size = new System.Drawing.Size(27, 25);
             this.buttonClearSearchBar.TabIndex = 22;
             this.buttonClearSearchBar.Click += new System.EventHandler(this.buttonClearSearchBar_Click);
             // 
@@ -232,30 +243,33 @@
             // 
             this.dataGridViewMedicine.AllowUserToAddRows = false;
             this.dataGridViewMedicine.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.dataGridViewMedicine.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewMedicine.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridViewMedicine.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMedicine.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewMedicine.ColumnHeadersHeight = 20;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewMedicine.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewMedicine.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewMedicine.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridViewMedicine.Location = new System.Drawing.Point(21, 297);
+            this.dataGridViewMedicine.Location = new System.Drawing.Point(28, 366);
+            this.dataGridViewMedicine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewMedicine.Name = "dataGridViewMedicine";
             this.dataGridViewMedicine.ReadOnly = true;
-            this.dataGridViewMedicine.Size = new System.Drawing.Size(637, 295);
+            this.dataGridViewMedicine.RowHeadersVisible = false;
+            this.dataGridViewMedicine.RowHeadersWidth = 51;
+            this.dataGridViewMedicine.Size = new System.Drawing.Size(849, 363);
             this.dataGridViewMedicine.TabIndex = 23;
             this.dataGridViewMedicine.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridViewMedicine.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -279,10 +293,10 @@
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
             this.buttonAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
             this.buttonAdd.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(187)))), ((int)(((byte)(106)))));
-            this.buttonAdd.Location = new System.Drawing.Point(290, 241);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAdd.Location = new System.Drawing.Point(387, 297);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(89, 30);
+            this.buttonAdd.Size = new System.Drawing.Size(119, 37);
             this.buttonAdd.TabIndex = 24;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -301,10 +315,10 @@
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
             this.buttonUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(0)))));
             this.buttonUpdate.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonUpdate.Location = new System.Drawing.Point(383, 241);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonUpdate.Location = new System.Drawing.Point(511, 297);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(89, 30);
+            this.buttonUpdate.Size = new System.Drawing.Size(119, 37);
             this.buttonUpdate.TabIndex = 25;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -323,10 +337,10 @@
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
             this.buttonDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.buttonDelete.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.buttonDelete.Location = new System.Drawing.Point(476, 241);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDelete.Location = new System.Drawing.Point(635, 297);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(89, 30);
+            this.buttonDelete.Size = new System.Drawing.Size(119, 37);
             this.buttonDelete.TabIndex = 26;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
@@ -345,10 +359,10 @@
             this.buttonClear.ForeColor = System.Drawing.Color.White;
             this.buttonClear.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.buttonClear.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.buttonClear.Location = new System.Drawing.Point(569, 241);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonClear.Location = new System.Drawing.Point(759, 297);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(89, 30);
+            this.buttonClear.Size = new System.Drawing.Size(119, 37);
             this.buttonClear.TabIndex = 27;
             this.buttonClear.Text = "Clear";
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
@@ -359,9 +373,10 @@
             this.labelErrorMedicineID.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorMedicineID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorMedicineID.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorMedicineID.Location = new System.Drawing.Point(150, 98);
+            this.labelErrorMedicineID.Location = new System.Drawing.Point(200, 121);
+            this.labelErrorMedicineID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelErrorMedicineID.Name = "labelErrorMedicineID";
-            this.labelErrorMedicineID.Size = new System.Drawing.Size(177, 15);
+            this.labelErrorMedicineID.Size = new System.Drawing.Size(212, 18);
             this.labelErrorMedicineID.TabIndex = 28;
             this.labelErrorMedicineID.Text = "* Medicine ID can not be empty";
             this.labelErrorMedicineID.Visible = false;
@@ -372,9 +387,10 @@
             this.labelErrorMedicineName.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorMedicineName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorMedicineName.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorMedicineName.Location = new System.Drawing.Point(150, 144);
+            this.labelErrorMedicineName.Location = new System.Drawing.Point(200, 177);
+            this.labelErrorMedicineName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelErrorMedicineName.Name = "labelErrorMedicineName";
-            this.labelErrorMedicineName.Size = new System.Drawing.Size(197, 15);
+            this.labelErrorMedicineName.Size = new System.Drawing.Size(235, 18);
             this.labelErrorMedicineName.TabIndex = 29;
             this.labelErrorMedicineName.Text = "* Medicine name can not be empty";
             this.labelErrorMedicineName.Visible = false;
@@ -384,7 +400,8 @@
             this.numericUpDownQuantity.BackColor = System.Drawing.Color.Transparent;
             this.numericUpDownQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDownQuantity.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownQuantity.Location = new System.Drawing.Point(147, 168);
+            this.numericUpDownQuantity.Location = new System.Drawing.Point(196, 207);
+            this.numericUpDownQuantity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownQuantity.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -396,7 +413,7 @@
             0,
             0});
             this.numericUpDownQuantity.Name = "numericUpDownQuantity";
-            this.numericUpDownQuantity.Size = new System.Drawing.Size(100, 26);
+            this.numericUpDownQuantity.Size = new System.Drawing.Size(133, 32);
             this.numericUpDownQuantity.TabIndex = 31;
             this.numericUpDownQuantity.Value = new decimal(new int[] {
             1,
@@ -409,7 +426,8 @@
             this.numericUpDownLowStockWarning.BackColor = System.Drawing.Color.Transparent;
             this.numericUpDownLowStockWarning.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDownLowStockWarning.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownLowStockWarning.Location = new System.Drawing.Point(529, 166);
+            this.numericUpDownLowStockWarning.Location = new System.Drawing.Point(705, 204);
+            this.numericUpDownLowStockWarning.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownLowStockWarning.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -421,7 +439,7 @@
             0,
             0});
             this.numericUpDownLowStockWarning.Name = "numericUpDownLowStockWarning";
-            this.numericUpDownLowStockWarning.Size = new System.Drawing.Size(100, 26);
+            this.numericUpDownLowStockWarning.Size = new System.Drawing.Size(133, 32);
             this.numericUpDownLowStockWarning.TabIndex = 32;
             this.numericUpDownLowStockWarning.Value = new decimal(new int[] {
             1,
@@ -435,7 +453,8 @@
             this.numericUpDownBuyingPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDownBuyingPrice.DecimalPlaces = 2;
             this.numericUpDownBuyingPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownBuyingPrice.Location = new System.Drawing.Point(529, 119);
+            this.numericUpDownBuyingPrice.Location = new System.Drawing.Point(705, 146);
+            this.numericUpDownBuyingPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownBuyingPrice.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -447,7 +466,7 @@
             0,
             0});
             this.numericUpDownBuyingPrice.Name = "numericUpDownBuyingPrice";
-            this.numericUpDownBuyingPrice.Size = new System.Drawing.Size(100, 26);
+            this.numericUpDownBuyingPrice.Size = new System.Drawing.Size(133, 32);
             this.numericUpDownBuyingPrice.TabIndex = 33;
             this.numericUpDownBuyingPrice.Value = new decimal(new int[] {
             1,
@@ -461,7 +480,8 @@
             this.numericUpDownSellingPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDownSellingPrice.DecimalPlaces = 2;
             this.numericUpDownSellingPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownSellingPrice.Location = new System.Drawing.Point(529, 71);
+            this.numericUpDownSellingPrice.Location = new System.Drawing.Point(705, 87);
+            this.numericUpDownSellingPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownSellingPrice.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -473,7 +493,7 @@
             0,
             0});
             this.numericUpDownSellingPrice.Name = "numericUpDownSellingPrice";
-            this.numericUpDownSellingPrice.Size = new System.Drawing.Size(100, 26);
+            this.numericUpDownSellingPrice.Size = new System.Drawing.Size(133, 32);
             this.numericUpDownSellingPrice.TabIndex = 34;
             this.numericUpDownSellingPrice.Value = new decimal(new int[] {
             1,
@@ -483,7 +503,7 @@
             // 
             // UserControlMedicine
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.numericUpDownSellingPrice);
             this.Controls.Add(this.numericUpDownBuyingPrice);
@@ -507,8 +527,9 @@
             this.Controls.Add(this.labelMedicineID);
             this.Controls.Add(this.labelMedicine);
             this.Controls.Add(this.labelErrorMedicineName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserControlMedicine";
-            this.Size = new System.Drawing.Size(680, 610);
+            this.Size = new System.Drawing.Size(907, 751);
             this.Load += new System.EventHandler(this.UserControlMedicine_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMedicine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).EndInit();

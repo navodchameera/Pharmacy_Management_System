@@ -80,7 +80,7 @@ namespace PharmacyManagementSystem
         }
 
         //load the panel dashboard to(user Control) the dashboard
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        private void buttonDashboard_Click(object sender, EventArgs e)
         {
             //to hightlight that it is selected
             buttonDashboard.FillColor = Color.FromArgb(165, 207, 235);
@@ -202,6 +202,7 @@ namespace PharmacyManagementSystem
             buttonSettings.FillColor = Color.Transparent;
             buttonSettings.FillColor2 = Color.Transparent;
 
+            LoadControl(new UserControlEmployee());
             
         }
 
@@ -227,8 +228,6 @@ namespace PharmacyManagementSystem
 
             buttonEmployee.FillColor = Color.Transparent;
             buttonEmployee.FillColor2 = Color.Transparent;
-
-            
 
             LoadControl(new UserControlSettings());
         }

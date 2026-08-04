@@ -17,3 +17,4 @@ C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem
 C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.FormAbout.resources
 C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.UserControlMedicine.resources
 C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.UserControldispense.resources
+C:\Users\User\Desktop\Pharmacy\PharmacyManagementSystem\PharmacyManagementSystem\obj\Debug\PharmacyManagementSystem.UserControlEmployee.resources

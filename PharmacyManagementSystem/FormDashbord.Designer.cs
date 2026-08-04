@@ -72,9 +72,10 @@
             this.panelWindowControl.Controls.Add(this.buttonClose);
             this.panelWindowControl.Controls.Add(this.buttonMinimize);
             this.panelWindowControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelWindowControl.Location = new System.Drawing.Point(220, 0);
+            this.panelWindowControl.Location = new System.Drawing.Point(293, 0);
+            this.panelWindowControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelWindowControl.Name = "panelWindowControl";
-            this.panelWindowControl.Size = new System.Drawing.Size(680, 40);
+            this.panelWindowControl.Size = new System.Drawing.Size(907, 49);
             this.panelWindowControl.TabIndex = 7;
             // 
             // buttonClose
@@ -90,10 +91,11 @@
             this.buttonClose.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.buttonClose.ImageOffset = new System.Drawing.Point(1, 1);
             this.buttonClose.ImageSize = new System.Drawing.Size(15, 15);
-            this.buttonClose.Location = new System.Drawing.Point(648, 12);
+            this.buttonClose.Location = new System.Drawing.Point(864, 15);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.buttonClose.Size = new System.Drawing.Size(20, 20);
+            this.buttonClose.Size = new System.Drawing.Size(27, 25);
             this.buttonClose.TabIndex = 5;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
@@ -110,10 +112,11 @@
             this.buttonMinimize.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.buttonMinimize.Image = ((System.Drawing.Image)(resources.GetObject("buttonMinimize.Image")));
             this.buttonMinimize.ImageSize = new System.Drawing.Size(25, 25);
-            this.buttonMinimize.Location = new System.Drawing.Point(622, 12);
+            this.buttonMinimize.Location = new System.Drawing.Point(829, 15);
+            this.buttonMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonMinimize.Name = "buttonMinimize";
             this.buttonMinimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.buttonMinimize.Size = new System.Drawing.Size(20, 20);
+            this.buttonMinimize.Size = new System.Drawing.Size(27, 25);
             this.buttonMinimize.TabIndex = 6;
             this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
             // 
@@ -124,8 +127,9 @@
             this.PanelNavBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelNavBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(128)))), ((int)(((byte)(201)))));
             this.PanelNavBar.Location = new System.Drawing.Point(0, 0);
+            this.PanelNavBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelNavBar.Name = "PanelNavBar";
-            this.PanelNavBar.Size = new System.Drawing.Size(220, 650);
+            this.PanelNavBar.Size = new System.Drawing.Size(293, 800);
             this.PanelNavBar.TabIndex = 0;
             // 
             // panelNavButtons
@@ -139,9 +143,10 @@
             this.panelNavButtons.Controls.Add(this.buttonMedicine);
             this.panelNavButtons.Controls.Add(this.buttonDashboard);
             this.panelNavButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelNavButtons.Location = new System.Drawing.Point(0, 161);
+            this.panelNavButtons.Location = new System.Drawing.Point(0, 198);
+            this.panelNavButtons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelNavButtons.Name = "panelNavButtons";
-            this.panelNavButtons.Size = new System.Drawing.Size(220, 489);
+            this.panelNavButtons.Size = new System.Drawing.Size(293, 602);
             this.panelNavButtons.TabIndex = 1;
             // 
             // buttonEmployee
@@ -161,9 +166,10 @@
             this.buttonEmployee.Image = ((System.Drawing.Image)(resources.GetObject("buttonEmployee.Image")));
             this.buttonEmployee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonEmployee.ImageOffset = new System.Drawing.Point(15, 0);
-            this.buttonEmployee.Location = new System.Drawing.Point(0, 180);
+            this.buttonEmployee.Location = new System.Drawing.Point(0, 220);
+            this.buttonEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEmployee.Name = "buttonEmployee";
-            this.buttonEmployee.Size = new System.Drawing.Size(220, 45);
+            this.buttonEmployee.Size = new System.Drawing.Size(293, 55);
             this.buttonEmployee.TabIndex = 7;
             this.buttonEmployee.Text = "Employee";
             this.buttonEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -186,9 +192,10 @@
             this.buttonSettings.Image = ((System.Drawing.Image)(resources.GetObject("buttonSettings.Image")));
             this.buttonSettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonSettings.ImageOffset = new System.Drawing.Point(15, 0);
-            this.buttonSettings.Location = new System.Drawing.Point(0, 365);
+            this.buttonSettings.Location = new System.Drawing.Point(0, 449);
+            this.buttonSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSettings.Name = "buttonSettings";
-            this.buttonSettings.Size = new System.Drawing.Size(220, 45);
+            this.buttonSettings.Size = new System.Drawing.Size(293, 55);
             this.buttonSettings.TabIndex = 6;
             this.buttonSettings.Text = "Settings";
             this.buttonSettings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -211,9 +218,10 @@
             this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
             this.buttonLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonLogout.ImageOffset = new System.Drawing.Point(15, 0);
-            this.buttonLogout.Location = new System.Drawing.Point(0, 410);
+            this.buttonLogout.Location = new System.Drawing.Point(0, 505);
+            this.buttonLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(220, 45);
+            this.buttonLogout.Size = new System.Drawing.Size(293, 55);
             this.buttonLogout.TabIndex = 5;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -237,9 +245,10 @@
             this.buttonSupplier.Image = ((System.Drawing.Image)(resources.GetObject("buttonSupplier.Image")));
             this.buttonSupplier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonSupplier.ImageOffset = new System.Drawing.Point(15, 0);
-            this.buttonSupplier.Location = new System.Drawing.Point(0, 135);
+            this.buttonSupplier.Location = new System.Drawing.Point(0, 165);
+            this.buttonSupplier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSupplier.Name = "buttonSupplier";
-            this.buttonSupplier.Size = new System.Drawing.Size(220, 45);
+            this.buttonSupplier.Size = new System.Drawing.Size(293, 55);
             this.buttonSupplier.TabIndex = 4;
             this.buttonSupplier.Text = "Supplier";
             this.buttonSupplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -263,9 +272,10 @@
             this.buttonDispence.Image = ((System.Drawing.Image)(resources.GetObject("buttonDispence.Image")));
             this.buttonDispence.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonDispence.ImageOffset = new System.Drawing.Point(15, 0);
-            this.buttonDispence.Location = new System.Drawing.Point(0, 90);
+            this.buttonDispence.Location = new System.Drawing.Point(0, 110);
+            this.buttonDispence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDispence.Name = "buttonDispence";
-            this.buttonDispence.Size = new System.Drawing.Size(220, 45);
+            this.buttonDispence.Size = new System.Drawing.Size(293, 55);
             this.buttonDispence.TabIndex = 3;
             this.buttonDispence.Text = "Dispense";
             this.buttonDispence.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -289,9 +299,10 @@
             this.buttonMedicine.Image = ((System.Drawing.Image)(resources.GetObject("buttonMedicine.Image")));
             this.buttonMedicine.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonMedicine.ImageOffset = new System.Drawing.Point(15, 0);
-            this.buttonMedicine.Location = new System.Drawing.Point(0, 45);
+            this.buttonMedicine.Location = new System.Drawing.Point(0, 55);
+            this.buttonMedicine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonMedicine.Name = "buttonMedicine";
-            this.buttonMedicine.Size = new System.Drawing.Size(220, 45);
+            this.buttonMedicine.Size = new System.Drawing.Size(293, 55);
             this.buttonMedicine.TabIndex = 2;
             this.buttonMedicine.Text = "Medicine";
             this.buttonMedicine.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -316,13 +327,14 @@
             this.buttonDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonDashboard.ImageOffset = new System.Drawing.Point(15, 0);
             this.buttonDashboard.Location = new System.Drawing.Point(0, 0);
+            this.buttonDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDashboard.Name = "buttonDashboard";
-            this.buttonDashboard.Size = new System.Drawing.Size(220, 45);
+            this.buttonDashboard.Size = new System.Drawing.Size(293, 55);
             this.buttonDashboard.TabIndex = 1;
             this.buttonDashboard.Text = "Dashboard";
             this.buttonDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.buttonDashboard.TextOffset = new System.Drawing.Point(30, 0);
-            this.buttonDashboard.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // PanelNavBarLogo
             // 
@@ -331,17 +343,19 @@
             this.PanelNavBarLogo.Controls.Add(this.pictureBoxLogo);
             this.PanelNavBarLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelNavBarLogo.Location = new System.Drawing.Point(0, 0);
+            this.PanelNavBarLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelNavBarLogo.Name = "PanelNavBarLogo";
-            this.PanelNavBarLogo.Size = new System.Drawing.Size(220, 161);
+            this.PanelNavBarLogo.Size = new System.Drawing.Size(293, 198);
             this.PanelNavBarLogo.TabIndex = 0;
             // 
             // pictureBoxLogoName
             // 
             this.pictureBoxLogoName.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxLogoName.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogoName.Image")));
-            this.pictureBoxLogoName.Location = new System.Drawing.Point(62, 17);
+            this.pictureBoxLogoName.Location = new System.Drawing.Point(83, 21);
+            this.pictureBoxLogoName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxLogoName.Name = "pictureBoxLogoName";
-            this.pictureBoxLogoName.Size = new System.Drawing.Size(145, 40);
+            this.pictureBoxLogoName.Size = new System.Drawing.Size(193, 49);
             this.pictureBoxLogoName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogoName.TabIndex = 1;
             this.pictureBoxLogoName.TabStop = false;
@@ -350,9 +364,10 @@
             // 
             this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(7, 12);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(9, 15);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(67, 62);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
@@ -360,21 +375,23 @@
             // panelContainer
             // 
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(220, 40);
+            this.panelContainer.Location = new System.Drawing.Point(293, 49);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(680, 610);
+            this.panelContainer.Size = new System.Drawing.Size(907, 751);
             this.panelContainer.TabIndex = 8;
             // 
             // FormDashbord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 650);
+            this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelWindowControl);
             this.Controls.Add(this.PanelNavBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormDashbord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDashbord";

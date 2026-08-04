@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrentUser.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="FormAbout.cs">
       <SubType>Form</SubType>
@@ -84,6 +85,12 @@
     </Compile>
     <Compile Include="UserControlDispense .Designer.cs">
       <DependentUpon>UserControlDispense .cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEmployee.Designer.cs">
+      <DependentUpon>UserControlEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlMedicine.cs">
       <SubType>UserControl</SubType>
@@ -120,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDispense .resx">
       <DependentUpon>UserControlDispense .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlEmployee.resx">
+      <DependentUpon>UserControlEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlMedicine.resx">
       <DependentUpon>UserControlMedicine.cs</DependentUpon>

@@ -16,7 +16,7 @@ namespace PharmacyManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDashbord());
+            Application.Run(new FormLogin());
         }
     }
 }

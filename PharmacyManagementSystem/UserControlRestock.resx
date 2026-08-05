@@ -1434,7 +1434,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBi/z+zeZm4wTt/sgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="buttonClearCustomerSearchBar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonClearBatchSearchBar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABYAAAAWACAYAAADgUeIuAAAABGdBTUEAALGPC/xhBQAAZZ5JREFUeF7s
         3X2MJfld33sbGww2trFZbLCxwU/ghVg8KHFI4kgoBJBMBILoclESgYXkYK7FHzd3URSIYCIrVqIoIJEn
@@ -1873,7 +1873,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp9TfP9qxKpXs0P4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="textBoxSearchCustomer.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="textBoxSearchBatch.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABYAAAAWACAYAAADgUeIuAAAABGdBTUEAALGPC/xhBQAAzEhJREFUeF7s
         3XmYJFlZ8G1EBGSRTVBEdpD1QwRlExREeVFRUUA2UZFFRURAUUSREURWRWRRFF5ZBZpNRAYGZjrjRFVl

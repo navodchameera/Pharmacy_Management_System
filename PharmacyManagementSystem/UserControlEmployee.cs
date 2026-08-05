@@ -119,7 +119,7 @@ namespace PharmacyManagementSystem
                 //to check if username exsists
                 if (textBoxUsername.Text.Trim() == "")
                 {
-                    labelErrorUsername.Text = "*Employee name can not be empty";
+                    labelErrorUsername.Text = "*Username can not be empty";
                     labelErrorUsername.Show();
                 }
 
@@ -506,17 +506,26 @@ namespace PharmacyManagementSystem
                 //enable the primary key textbox
                 textBoxEmployeeID.Enabled = true;
 
-                //clear all textboxes
-                textBoxEmployeeID.Clear();
-                textBoxEmployeeName.Clear();
-                textBoxUsername.Clear();
-                textBoxAddress.Clear();
-                textBoxPhone.Clear();
+                //clear all 
+                textBoxEmployeeID.Text = "";
+                textBoxEmployeeName.Text = "";
+                textBoxUsername.Text = "";
+                textBoxAddress.Text = "";
+                textBoxPhone.Text = "";
                 comboBoxGender.SelectedIndex = 0;
                 comboBoxShift.SelectedIndex = 0;
                 dateTimePickerDOB.Value = DateTime.Now;
                 numericUpDownSalary.Value = 1000;
                 checkBoxAdminAccess.Checked = false;
+
+                //hide error labels
+                labelErrorEmployeeID.Hide();
+                labelErrorEmployeeName.Hide();
+                labelErrorUsername.Hide();
+                labelErrorAddress.Hide();
+                labelErrorPhone.Hide();
+                labelErrorGender.Hide();
+                labelErrorShift.Hide();
             }
         }
     }

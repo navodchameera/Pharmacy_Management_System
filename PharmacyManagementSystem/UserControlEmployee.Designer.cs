@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlEmployee));
             this.textBoxEmployeeID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -85,12 +85,12 @@
             this.textBoxEmployeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmployeeID.ForeColor = System.Drawing.Color.Black;
             this.textBoxEmployeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxEmployeeID.Location = new System.Drawing.Point(167, 57);
-            this.textBoxEmployeeID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxEmployeeID.Location = new System.Drawing.Point(125, 46);
+            this.textBoxEmployeeID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxEmployeeID.Name = "textBoxEmployeeID";
             this.textBoxEmployeeID.PlaceholderText = "Employee ID";
             this.textBoxEmployeeID.SelectedText = "";
-            this.textBoxEmployeeID.Size = new System.Drawing.Size(148, 37);
+            this.textBoxEmployeeID.Size = new System.Drawing.Size(111, 30);
             this.textBoxEmployeeID.TabIndex = 60;
             this.textBoxEmployeeID.TextChanged += new System.EventHandler(this.textBoxEmployeeID_TextChanged);
             // 
@@ -99,10 +99,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label4.Location = new System.Drawing.Point(23, 65);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(17, 53);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 28);
+            this.label4.Size = new System.Drawing.Size(104, 21);
             this.label4.TabIndex = 59;
             this.label4.Text = "Employee ID :";
             // 
@@ -111,10 +110,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(76)))), ((int)(((byte)(120)))));
-            this.label5.Location = new System.Drawing.Point(21, -7);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(16, -6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 41);
+            this.label5.Size = new System.Drawing.Size(132, 32);
             this.label5.TabIndex = 58;
             this.label5.Text = "Employee ";
             // 
@@ -133,12 +131,12 @@
             this.textBoxEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmployeeName.ForeColor = System.Drawing.Color.Black;
             this.textBoxEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxEmployeeName.Location = new System.Drawing.Point(604, 60);
-            this.textBoxEmployeeName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxEmployeeName.Location = new System.Drawing.Point(453, 49);
+            this.textBoxEmployeeName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxEmployeeName.Name = "textBoxEmployeeName";
             this.textBoxEmployeeName.PlaceholderText = "Employee Name";
             this.textBoxEmployeeName.SelectedText = "";
-            this.textBoxEmployeeName.Size = new System.Drawing.Size(271, 37);
+            this.textBoxEmployeeName.Size = new System.Drawing.Size(203, 30);
             this.textBoxEmployeeName.TabIndex = 62;
             this.textBoxEmployeeName.TextChanged += new System.EventHandler(this.textBoxEmployeeName_TextChanged);
             // 
@@ -147,10 +145,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label1.Location = new System.Drawing.Point(421, 65);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(316, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 28);
+            this.label1.Size = new System.Drawing.Size(131, 21);
             this.label1.TabIndex = 61;
             this.label1.Text = "Employee Name :";
             // 
@@ -160,12 +157,11 @@
             this.labelErrorEmployeeID.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorEmployeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorEmployeeID.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorEmployeeID.Location = new System.Drawing.Point(171, 92);
-            this.labelErrorEmployeeID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorEmployeeID.Location = new System.Drawing.Point(128, 75);
             this.labelErrorEmployeeID.Name = "labelErrorEmployeeID";
-            this.labelErrorEmployeeID.Size = new System.Drawing.Size(238, 18);
+            this.labelErrorEmployeeID.Size = new System.Drawing.Size(178, 15);
             this.labelErrorEmployeeID.TabIndex = 63;
-            this.labelErrorEmployeeID.Text = "*Employee name can not be empty";
+            this.labelErrorEmployeeID.Text = "*Employee ID can not be empty";
             this.labelErrorEmployeeID.Visible = false;
             // 
             // labelErrorEmployeeName
@@ -174,10 +170,9 @@
             this.labelErrorEmployeeName.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorEmployeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorEmployeeName.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorEmployeeName.Location = new System.Drawing.Point(608, 94);
-            this.labelErrorEmployeeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorEmployeeName.Location = new System.Drawing.Point(456, 76);
             this.labelErrorEmployeeName.Name = "labelErrorEmployeeName";
-            this.labelErrorEmployeeName.Size = new System.Drawing.Size(171, 18);
+            this.labelErrorEmployeeName.Size = new System.Drawing.Size(142, 15);
             this.labelErrorEmployeeName.TabIndex = 64;
             this.labelErrorEmployeeName.Text = "*Name can not be empty";
             this.labelErrorEmployeeName.Visible = false;
@@ -187,10 +182,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label3.Location = new System.Drawing.Point(23, 183);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(17, 149);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 28);
+            this.label3.Size = new System.Drawing.Size(61, 21);
             this.label3.TabIndex = 65;
             this.label3.Text = "Phone :";
             // 
@@ -209,12 +203,12 @@
             this.textBoxPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPhone.ForeColor = System.Drawing.Color.Black;
             this.textBoxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxPhone.Location = new System.Drawing.Point(167, 179);
-            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPhone.Location = new System.Drawing.Point(125, 145);
+            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.PlaceholderText = "Phone";
             this.textBoxPhone.SelectedText = "";
-            this.textBoxPhone.Size = new System.Drawing.Size(249, 37);
+            this.textBoxPhone.Size = new System.Drawing.Size(187, 30);
             this.textBoxPhone.TabIndex = 66;
             this.textBoxPhone.TextChanged += new System.EventHandler(this.textBoxPhone_TextChanged);
             // 
@@ -224,10 +218,9 @@
             this.labelErrorPhone.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorPhone.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorPhone.Location = new System.Drawing.Point(172, 214);
-            this.labelErrorPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorPhone.Location = new System.Drawing.Point(129, 174);
             this.labelErrorPhone.Name = "labelErrorPhone";
-            this.labelErrorPhone.Size = new System.Drawing.Size(174, 18);
+            this.labelErrorPhone.Size = new System.Drawing.Size(144, 15);
             this.labelErrorPhone.TabIndex = 67;
             this.labelErrorPhone.Text = "*Phone can not be empty";
             this.labelErrorPhone.Visible = false;
@@ -237,10 +230,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label7.Location = new System.Drawing.Point(424, 240);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(318, 195);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 28);
+            this.label7.Size = new System.Drawing.Size(49, 21);
             this.label7.TabIndex = 68;
             this.label7.Text = "Shift :";
             // 
@@ -254,10 +246,9 @@
             "Afternoon",
             "Evening",
             "Night"});
-            this.comboBoxShift.Location = new System.Drawing.Point(604, 240);
-            this.comboBoxShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxShift.Location = new System.Drawing.Point(453, 195);
             this.comboBoxShift.Name = "comboBoxShift";
-            this.comboBoxShift.Size = new System.Drawing.Size(171, 28);
+            this.comboBoxShift.Size = new System.Drawing.Size(129, 24);
             this.comboBoxShift.TabIndex = 70;
             this.comboBoxShift.SelectedIndexChanged += new System.EventHandler(this.comboBoxShift_SelectedIndexChanged);
             // 
@@ -266,8 +257,8 @@
             this.numericUpDownSalary.BackColor = System.Drawing.Color.Transparent;
             this.numericUpDownSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDownSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownSalary.Location = new System.Drawing.Point(167, 310);
-            this.numericUpDownSalary.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDownSalary.Location = new System.Drawing.Point(125, 252);
+            this.numericUpDownSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numericUpDownSalary.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -279,7 +270,7 @@
             0,
             0});
             this.numericUpDownSalary.Name = "numericUpDownSalary";
-            this.numericUpDownSalary.Size = new System.Drawing.Size(133, 32);
+            this.numericUpDownSalary.Size = new System.Drawing.Size(100, 26);
             this.numericUpDownSalary.TabIndex = 72;
             this.numericUpDownSalary.Value = new decimal(new int[] {
             1000,
@@ -292,10 +283,9 @@
             this.labelQunatity.AutoSize = true;
             this.labelQunatity.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelQunatity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.labelQunatity.Location = new System.Drawing.Point(23, 310);
-            this.labelQunatity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelQunatity.Location = new System.Drawing.Point(17, 252);
             this.labelQunatity.Name = "labelQunatity";
-            this.labelQunatity.Size = new System.Drawing.Size(74, 28);
+            this.labelQunatity.Size = new System.Drawing.Size(60, 21);
             this.labelQunatity.TabIndex = 71;
             this.labelQunatity.Text = "Salary :";
             // 
@@ -314,12 +304,12 @@
             this.textBoxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAddress.ForeColor = System.Drawing.Color.Black;
             this.textBoxAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxAddress.Location = new System.Drawing.Point(604, 119);
-            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxAddress.Location = new System.Drawing.Point(453, 97);
+            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.PlaceholderText = "Address";
             this.textBoxAddress.SelectedText = "";
-            this.textBoxAddress.Size = new System.Drawing.Size(271, 37);
+            this.textBoxAddress.Size = new System.Drawing.Size(203, 30);
             this.textBoxAddress.TabIndex = 74;
             this.textBoxAddress.TextChanged += new System.EventHandler(this.textBoxAddress_TextChanged);
             // 
@@ -328,10 +318,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label8.Location = new System.Drawing.Point(424, 122);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(318, 99);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 28);
+            this.label8.Size = new System.Drawing.Size(73, 21);
             this.label8.TabIndex = 73;
             this.label8.Text = "Address :";
             // 
@@ -341,10 +330,9 @@
             this.labelErrorAddress.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorAddress.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorAddress.Location = new System.Drawing.Point(608, 153);
-            this.labelErrorAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorAddress.Location = new System.Drawing.Point(456, 124);
             this.labelErrorAddress.Name = "labelErrorAddress";
-            this.labelErrorAddress.Size = new System.Drawing.Size(185, 18);
+            this.labelErrorAddress.Size = new System.Drawing.Size(152, 15);
             this.labelErrorAddress.TabIndex = 75;
             this.labelErrorAddress.Text = "*Address can not be empty";
             this.labelErrorAddress.Visible = false;
@@ -354,10 +342,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label10.Location = new System.Drawing.Point(23, 250);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(17, 203);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 28);
+            this.label10.Size = new System.Drawing.Size(49, 21);
             this.label10.TabIndex = 76;
             this.label10.Text = "DOB :";
             // 
@@ -368,12 +355,11 @@
             this.dateTimePickerDOB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
             this.dateTimePickerDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateTimePickerDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateTimePickerDOB.Location = new System.Drawing.Point(167, 246);
-            this.dateTimePickerDOB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerDOB.Location = new System.Drawing.Point(125, 200);
             this.dateTimePickerDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerDOB.Name = "dateTimePickerDOB";
-            this.dateTimePickerDOB.Size = new System.Drawing.Size(249, 37);
+            this.dateTimePickerDOB.Size = new System.Drawing.Size(187, 30);
             this.dateTimePickerDOB.TabIndex = 77;
             this.dateTimePickerDOB.Value = new System.DateTime(2026, 8, 3, 10, 33, 8, 676);
             // 
@@ -382,10 +368,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label11.Location = new System.Drawing.Point(424, 183);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(318, 149);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 28);
+            this.label11.Size = new System.Drawing.Size(68, 21);
             this.label11.TabIndex = 78;
             this.label11.Text = "Gender :";
             // 
@@ -397,10 +382,9 @@
             "--Select Gender--",
             "Male",
             "Female"});
-            this.comboBoxGender.Location = new System.Drawing.Point(604, 184);
-            this.comboBoxGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxGender.Location = new System.Drawing.Point(453, 150);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(171, 28);
+            this.comboBoxGender.Size = new System.Drawing.Size(129, 24);
             this.comboBoxGender.TabIndex = 79;
             this.comboBoxGender.SelectedIndexChanged += new System.EventHandler(this.comboBoxGender_SelectedIndexChanged);
             // 
@@ -410,10 +394,9 @@
             this.labelErrorGender.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorGender.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorGender.Location = new System.Drawing.Point(608, 211);
-            this.labelErrorGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorGender.Location = new System.Drawing.Point(456, 171);
             this.labelErrorGender.Name = "labelErrorGender";
-            this.labelErrorGender.Size = new System.Drawing.Size(151, 18);
+            this.labelErrorGender.Size = new System.Drawing.Size(127, 15);
             this.labelErrorGender.TabIndex = 80;
             this.labelErrorGender.Text = "*Please select gender";
             this.labelErrorGender.Visible = false;
@@ -424,10 +407,9 @@
             this.labelErrorShift.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorShift.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorShift.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorShift.Location = new System.Drawing.Point(609, 267);
-            this.labelErrorShift.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorShift.Location = new System.Drawing.Point(457, 217);
             this.labelErrorShift.Name = "labelErrorShift";
-            this.labelErrorShift.Size = new System.Drawing.Size(133, 18);
+            this.labelErrorShift.Size = new System.Drawing.Size(110, 15);
             this.labelErrorShift.TabIndex = 81;
             this.labelErrorShift.Text = "*Please select shift";
             this.labelErrorShift.Visible = false;
@@ -446,10 +428,10 @@
             this.buttonClear.ForeColor = System.Drawing.Color.White;
             this.buttonClear.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.buttonClear.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.buttonClear.Location = new System.Drawing.Point(760, 388);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonClear.Location = new System.Drawing.Point(570, 315);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(119, 37);
+            this.buttonClear.Size = new System.Drawing.Size(89, 30);
             this.buttonClear.TabIndex = 88;
             this.buttonClear.Text = "Clear";
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
@@ -468,10 +450,10 @@
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
             this.buttonDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.buttonDelete.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.buttonDelete.Location = new System.Drawing.Point(636, 388);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonDelete.Location = new System.Drawing.Point(477, 315);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(119, 37);
+            this.buttonDelete.Size = new System.Drawing.Size(89, 30);
             this.buttonDelete.TabIndex = 87;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
@@ -490,10 +472,10 @@
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
             this.buttonUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(0)))));
             this.buttonUpdate.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonUpdate.Location = new System.Drawing.Point(512, 388);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonUpdate.Location = new System.Drawing.Point(384, 315);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(119, 37);
+            this.buttonUpdate.Size = new System.Drawing.Size(89, 30);
             this.buttonUpdate.TabIndex = 86;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -512,10 +494,10 @@
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
             this.buttonAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
             this.buttonAdd.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(187)))), ((int)(((byte)(106)))));
-            this.buttonAdd.Location = new System.Drawing.Point(388, 388);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAdd.Location = new System.Drawing.Point(291, 315);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(119, 37);
+            this.buttonAdd.Size = new System.Drawing.Size(89, 30);
             this.buttonAdd.TabIndex = 85;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -524,35 +506,34 @@
             // 
             this.dataGridViewEmployee.AllowUserToAddRows = false;
             this.dataGridViewEmployee.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.dataGridViewEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGridViewEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewEmployee.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewEmployee.ColumnHeadersHeight = 20;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewEmployee.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewEmployee.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridViewEmployee.Location = new System.Drawing.Point(29, 449);
-            this.dataGridViewEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewEmployee.Location = new System.Drawing.Point(22, 365);
             this.dataGridViewEmployee.Name = "dataGridViewEmployee";
             this.dataGridViewEmployee.ReadOnly = true;
             this.dataGridViewEmployee.RowHeadersVisible = false;
             this.dataGridViewEmployee.RowHeadersWidth = 51;
-            this.dataGridViewEmployee.Size = new System.Drawing.Size(849, 276);
+            this.dataGridViewEmployee.Size = new System.Drawing.Size(637, 224);
             this.dataGridViewEmployee.TabIndex = 84;
             this.dataGridViewEmployee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridViewEmployee.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -575,11 +556,10 @@
             this.buttonClearSearchBar.ForeColor = System.Drawing.Color.White;
             this.buttonClearSearchBar.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.buttonClearSearchBar.Image = ((System.Drawing.Image)(resources.GetObject("buttonClearSearchBar.Image")));
-            this.buttonClearSearchBar.Location = new System.Drawing.Point(293, 394);
-            this.buttonClearSearchBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonClearSearchBar.Location = new System.Drawing.Point(220, 320);
             this.buttonClearSearchBar.Name = "buttonClearSearchBar";
             this.buttonClearSearchBar.PressedDepth = 0;
-            this.buttonClearSearchBar.Size = new System.Drawing.Size(27, 25);
+            this.buttonClearSearchBar.Size = new System.Drawing.Size(20, 20);
             this.buttonClearSearchBar.TabIndex = 83;
             this.buttonClearSearchBar.Click += new System.EventHandler(this.buttonClearSearchBar_Click);
             // 
@@ -599,12 +579,12 @@
             this.textBoxSearch.ForeColor = System.Drawing.Color.Black;
             this.textBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxSearch.IconLeft = ((System.Drawing.Image)(resources.GetObject("textBoxSearch.IconLeft")));
-            this.textBoxSearch.Location = new System.Drawing.Point(29, 388);
-            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxSearch.Location = new System.Drawing.Point(22, 315);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.PlaceholderText = "Search";
             this.textBoxSearch.SelectedText = "";
-            this.textBoxSearch.Size = new System.Drawing.Size(303, 37);
+            this.textBoxSearch.Size = new System.Drawing.Size(227, 30);
             this.textBoxSearch.TabIndex = 82;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
@@ -623,12 +603,12 @@
             this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.ForeColor = System.Drawing.Color.Black;
             this.textBoxUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxUsername.Location = new System.Drawing.Point(167, 119);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxUsername.Location = new System.Drawing.Point(125, 97);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.PlaceholderText = "Username";
             this.textBoxUsername.SelectedText = "";
-            this.textBoxUsername.Size = new System.Drawing.Size(249, 37);
+            this.textBoxUsername.Size = new System.Drawing.Size(187, 30);
             this.textBoxUsername.TabIndex = 90;
             this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
@@ -637,10 +617,9 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.label14.Location = new System.Drawing.Point(23, 122);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(17, 99);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(108, 28);
+            this.label14.Size = new System.Drawing.Size(88, 21);
             this.label14.TabIndex = 89;
             this.label14.Text = "Username :";
             // 
@@ -650,12 +629,11 @@
             this.labelErrorUsername.BackColor = System.Drawing.Color.Transparent;
             this.labelErrorUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorUsername.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorUsername.Location = new System.Drawing.Point(172, 153);
-            this.labelErrorUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelErrorUsername.Location = new System.Drawing.Point(129, 124);
             this.labelErrorUsername.Name = "labelErrorUsername";
-            this.labelErrorUsername.Size = new System.Drawing.Size(212, 18);
+            this.labelErrorUsername.Size = new System.Drawing.Size(166, 15);
             this.labelErrorUsername.TabIndex = 91;
-            this.labelErrorUsername.Text = "* Medicine ID can not be empty";
+            this.labelErrorUsername.Text = "*Username can not be empty";
             this.labelErrorUsername.Visible = false;
             // 
             // checkBoxAdminAccess
@@ -663,17 +641,16 @@
             this.checkBoxAdminAccess.AutoSize = true;
             this.checkBoxAdminAccess.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAdminAccess.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(109)))), ((int)(((byte)(184)))));
-            this.checkBoxAdminAccess.Location = new System.Drawing.Point(429, 310);
-            this.checkBoxAdminAccess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxAdminAccess.Location = new System.Drawing.Point(322, 252);
             this.checkBoxAdminAccess.Name = "checkBoxAdminAccess";
-            this.checkBoxAdminAccess.Size = new System.Drawing.Size(154, 32);
+            this.checkBoxAdminAccess.Size = new System.Drawing.Size(125, 25);
             this.checkBoxAdminAccess.TabIndex = 92;
             this.checkBoxAdminAccess.Text = "Admin Access";
             this.checkBoxAdminAccess.UseVisualStyleBackColor = true;
             // 
             // UserControlEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.checkBoxAdminAccess);
             this.Controls.Add(this.textBoxUsername);
@@ -709,9 +686,8 @@
             this.Controls.Add(this.labelErrorPhone);
             this.Controls.Add(this.labelErrorGender);
             this.Controls.Add(this.labelErrorShift);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserControlEmployee";
-            this.Size = new System.Drawing.Size(907, 751);
+            this.Size = new System.Drawing.Size(680, 610);
             this.Load += new System.EventHandler(this.UserControlEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSalary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).EndInit();

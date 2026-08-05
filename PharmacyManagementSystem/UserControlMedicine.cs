@@ -119,9 +119,9 @@ namespace PharmacyManagementSystem
                     textBoxMedicineID.Text = row.Cells["Medicine ID"].Value.ToString();
                     textBoxMedicineName.Text = row.Cells["Medicine Name"].Value.ToString();
                     numericUpDownQuantity.Value = Convert.ToInt64(row.Cells["Quantity"].Value);
-                    numericUpDownSellingPrice.Value = Convert.ToInt64(row.Cells["Selling Price"].Value);
-                    numericUpDownBuyingPrice.Value = Convert.ToInt64(row.Cells["Buying Price"].Value);
-                    numericUpDownLowStockWarning.Value = Convert.ToInt64(row.Cells["Low Stock Warning"].Value);
+                    numericUpDownSellingPrice.Value = Convert.ToInt32(row.Cells["Selling Price"].Value);
+                    numericUpDownBuyingPrice.Value = Convert.ToInt32(row.Cells["Buying Price"].Value);
+                    numericUpDownLowStockWarning.Value = Convert.ToInt32(row.Cells["Low Stock Warning"].Value);
                 }
             }
             catch (Exception ex)

@@ -96,35 +96,13 @@ namespace PharmacyManagementSystem
 
                 if (textBoxUsername.Text.Trim() != "" && textBoxPassword.Text != "")
                 {
-                    string inputUsername = textBoxUsername.Text.Trim();
-                    string inputPassword = textBoxPassword.Text;
-                    string sql = "SELECT Username,Password FROM Employee WHERE Username = '"+textBoxUsername.Text+"'  AND IsVisible = 1";
-
-                    DBConnection DBObj = new DBConnection();
-                    SqlCommand comObj = new SqlCommand(sql, DBObj.connect());
-                    //making a reader
-                    SqlDataReader reader = comObj.ExecuteReader();
-                    //if data exist to the qurey 
-                    if (reader.Read())
+                    //loggin in
+                    CurrentUser userObj = new CurrentUser();
+                    if (userObj.login(textBoxUsername.Text.Trim(), textBoxPassword.Text))
                     {
-                        string dbUsername = reader["Username"].ToString();
-                        string dbPassword = reader["Password"].ToString();
-                        //check user name and password matches
-                        if (inputUsername == dbUsername && inputPassword == dbPassword)
-                        {
-                            //if username and passwords match show dashboard
-                            FormDashbord openDash = new FormDashbord();
-                            openDash.Show();
-                            this.Hide();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Username or password is incorrect.",
-                            "Login Failed",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Error
-                            );
-                        }
+                        FormDashbord openDash = new FormDashbord(userObj.checkRole());
+                        openDash.Show();
+                        this.Hide();
                     }
                     else
                     {
@@ -134,7 +112,7 @@ namespace PharmacyManagementSystem
                         MessageBoxIcon.Error
                         );
                     }
-                    DBObj.disconnect();
+                    
                 }
             }
             catch (Exception ex)

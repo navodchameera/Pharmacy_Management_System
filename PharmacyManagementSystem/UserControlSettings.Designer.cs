@@ -52,6 +52,10 @@
             this.labelNewUsername = new System.Windows.Forms.Label();
             this.buttonChangeUsernameCollapse = new Guna.UI2.WinForms.Guna2Button();
             this.buttonChangeUsernameExpand = new Guna.UI2.WinForms.Guna2Button();
+            this.labelErrorUsername = new System.Windows.Forms.Label();
+            this.labelErrorConfirmPassword = new System.Windows.Forms.Label();
+            this.labelErrorNewPassword = new System.Windows.Forms.Label();
+            this.labelErrorCurrentPassword = new System.Windows.Forms.Label();
             this.panelSettings.SuspendLayout();
             this.panelChangePassword.SuspendLayout();
             this.panelChangeUsername.SuspendLayout();
@@ -132,6 +136,9 @@
             this.panelChangePassword.Controls.Add(this.label3);
             this.panelChangePassword.Controls.Add(this.label2);
             this.panelChangePassword.Controls.Add(this.labelCurrentPassword);
+            this.panelChangePassword.Controls.Add(this.labelErrorConfirmPassword);
+            this.panelChangePassword.Controls.Add(this.labelErrorNewPassword);
+            this.panelChangePassword.Controls.Add(this.labelErrorCurrentPassword);
             this.panelChangePassword.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelChangePassword.Location = new System.Drawing.Point(0, 416);
             this.panelChangePassword.Name = "panelChangePassword";
@@ -158,6 +165,7 @@
             this.buttonChangePassword.Size = new System.Drawing.Size(139, 37);
             this.buttonChangePassword.TabIndex = 14;
             this.buttonChangePassword.Text = "Change";
+            this.buttonChangePassword.Click += new System.EventHandler(this.buttonChangePassword_Click);
             // 
             // buttonShowPasswords
             // 
@@ -223,6 +231,7 @@
             this.textBoxConfirmNewPassword.SelectedText = "";
             this.textBoxConfirmNewPassword.Size = new System.Drawing.Size(258, 40);
             this.textBoxConfirmNewPassword.TabIndex = 11;
+            this.textBoxConfirmNewPassword.TextChanged += new System.EventHandler(this.textBoxConfirmNewPassword_TextChanged);
             // 
             // textBoxNewPassword
             // 
@@ -246,6 +255,7 @@
             this.textBoxNewPassword.SelectedText = "";
             this.textBoxNewPassword.Size = new System.Drawing.Size(258, 40);
             this.textBoxNewPassword.TabIndex = 10;
+            this.textBoxNewPassword.TextChanged += new System.EventHandler(this.textBoxNewPassword_TextChanged);
             // 
             // textBoxCurrentPassword
             // 
@@ -269,6 +279,7 @@
             this.textBoxCurrentPassword.SelectedText = "";
             this.textBoxCurrentPassword.Size = new System.Drawing.Size(258, 40);
             this.textBoxCurrentPassword.TabIndex = 9;
+            this.textBoxCurrentPassword.TextChanged += new System.EventHandler(this.textBoxCurrentPassword_TextChanged);
             // 
             // label3
             // 
@@ -372,6 +383,7 @@
             this.panelChangeUsername.Controls.Add(this.buttonChangeUsername);
             this.panelChangeUsername.Controls.Add(this.textBoxNewUsername);
             this.panelChangeUsername.Controls.Add(this.labelNewUsername);
+            this.panelChangeUsername.Controls.Add(this.labelErrorUsername);
             this.panelChangeUsername.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelChangeUsername.Location = new System.Drawing.Point(0, 120);
             this.panelChangeUsername.Name = "panelChangeUsername";
@@ -398,6 +410,7 @@
             this.buttonChangeUsername.Size = new System.Drawing.Size(139, 37);
             this.buttonChangeUsername.TabIndex = 14;
             this.buttonChangeUsername.Text = "Change";
+            this.buttonChangeUsername.Click += new System.EventHandler(this.buttonChangeUsername_Click);
             // 
             // textBoxNewUsername
             // 
@@ -420,6 +433,7 @@
             this.textBoxNewUsername.SelectedText = "";
             this.textBoxNewUsername.Size = new System.Drawing.Size(258, 40);
             this.textBoxNewUsername.TabIndex = 9;
+            this.textBoxNewUsername.TextChanged += new System.EventHandler(this.textBoxNewUsername_TextChanged);
             // 
             // labelNewUsername
             // 
@@ -489,6 +503,58 @@
             this.buttonChangeUsernameExpand.TextOffset = new System.Drawing.Point(20, 0);
             this.buttonChangeUsernameExpand.Click += new System.EventHandler(this.buttonChangeUsernameExpand_Click);
             // 
+            // labelErrorUsername
+            // 
+            this.labelErrorUsername.AutoSize = true;
+            this.labelErrorUsername.BackColor = System.Drawing.Color.Transparent;
+            this.labelErrorUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorUsername.ForeColor = System.Drawing.Color.Red;
+            this.labelErrorUsername.Location = new System.Drawing.Point(292, 69);
+            this.labelErrorUsername.Name = "labelErrorUsername";
+            this.labelErrorUsername.Size = new System.Drawing.Size(166, 15);
+            this.labelErrorUsername.TabIndex = 92;
+            this.labelErrorUsername.Text = "*Username can not be empty";
+            this.labelErrorUsername.Visible = false;
+            // 
+            // labelErrorConfirmPassword
+            // 
+            this.labelErrorConfirmPassword.AutoSize = true;
+            this.labelErrorConfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelErrorConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorConfirmPassword.ForeColor = System.Drawing.Color.Red;
+            this.labelErrorConfirmPassword.Location = new System.Drawing.Point(292, 183);
+            this.labelErrorConfirmPassword.Name = "labelErrorConfirmPassword";
+            this.labelErrorConfirmPassword.Size = new System.Drawing.Size(132, 15);
+            this.labelErrorConfirmPassword.TabIndex = 93;
+            this.labelErrorConfirmPassword.Text = "*This can not be Empty";
+            this.labelErrorConfirmPassword.Visible = false;
+            // 
+            // labelErrorNewPassword
+            // 
+            this.labelErrorNewPassword.AutoSize = true;
+            this.labelErrorNewPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelErrorNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorNewPassword.ForeColor = System.Drawing.Color.Red;
+            this.labelErrorNewPassword.Location = new System.Drawing.Point(292, 126);
+            this.labelErrorNewPassword.Name = "labelErrorNewPassword";
+            this.labelErrorNewPassword.Size = new System.Drawing.Size(132, 15);
+            this.labelErrorNewPassword.TabIndex = 94;
+            this.labelErrorNewPassword.Text = "*This can not be Empty";
+            this.labelErrorNewPassword.Visible = false;
+            // 
+            // labelErrorCurrentPassword
+            // 
+            this.labelErrorCurrentPassword.AutoSize = true;
+            this.labelErrorCurrentPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelErrorCurrentPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorCurrentPassword.ForeColor = System.Drawing.Color.Red;
+            this.labelErrorCurrentPassword.Location = new System.Drawing.Point(292, 69);
+            this.labelErrorCurrentPassword.Name = "labelErrorCurrentPassword";
+            this.labelErrorCurrentPassword.Size = new System.Drawing.Size(132, 15);
+            this.labelErrorCurrentPassword.TabIndex = 95;
+            this.labelErrorCurrentPassword.Text = "*This can not be Empty";
+            this.labelErrorCurrentPassword.Visible = false;
+            // 
             // UserControlSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -533,5 +599,9 @@
         private Guna.UI2.WinForms.Guna2Button buttonChangePasswordCollapse;
         private Guna.UI2.WinForms.Guna2Button buttonChangePasswordExpand;
         private Guna.UI2.WinForms.Guna2Button buttonAbout;
+        private System.Windows.Forms.Label labelErrorUsername;
+        private System.Windows.Forms.Label labelErrorConfirmPassword;
+        private System.Windows.Forms.Label labelErrorNewPassword;
+        private System.Windows.Forms.Label labelErrorCurrentPassword;
     }
 }

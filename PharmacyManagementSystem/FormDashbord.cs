@@ -12,9 +12,15 @@ namespace PharmacyManagementSystem
 {
     public partial class FormDashbord : Form
     {
-        public FormDashbord()
+        public FormDashbord(string mode)
         {
             InitializeComponent();
+            //if staff is using the system hide the employee button
+            //only admin/manager can add/update/delete employees
+            if (mode == "staff")
+            { 
+                buttonEmployee.Hide();
+            }
         }
 
         private void FormDashbord_Load(object sender, EventArgs e)
@@ -53,11 +59,11 @@ namespace PharmacyManagementSystem
         private void buttonLogout_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-            "Are you sure you want to log out?",
-            "Confirm Logout",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question
-            );
+                "Are you sure you want to log out?",
+                "Confirm Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
 
             if (result == DialogResult.Yes)
             {
@@ -65,6 +71,8 @@ namespace PharmacyManagementSystem
                 this.Hide();
                 FormLogin logout = new FormLogin();
                 logout.Show();
+                CurrentUser userObj = new CurrentUser();
+                userObj.logout();
             }
         }
 
@@ -93,14 +101,17 @@ namespace PharmacyManagementSystem
             buttonDispence.FillColor = Color.Transparent;
             buttonDispence.FillColor2 = Color.Transparent;
 
-            buttonSupplier.FillColor = Color.Transparent;
-            buttonSupplier.FillColor2 = Color.Transparent;
+            buttonCustomer.FillColor = Color.Transparent;
+            buttonCustomer.FillColor2 = Color.Transparent;
 
             buttonEmployee.FillColor = Color.Transparent;
             buttonEmployee.FillColor2 = Color.Transparent;
 
             buttonSettings.FillColor = Color.Transparent;
             buttonSettings.FillColor2 = Color.Transparent;
+
+            buttonRestock.FillColor = Color.Transparent;
+            buttonRestock.FillColor2 = Color.Transparent;
 
             LoadControl(new UserControlDashboard());
         }
@@ -118,14 +129,17 @@ namespace PharmacyManagementSystem
             buttonDispence.FillColor = Color.Transparent;
             buttonDispence.FillColor2 = Color.Transparent;
 
-            buttonSupplier.FillColor = Color.Transparent;
-            buttonSupplier.FillColor2 = Color.Transparent;
+            buttonCustomer.FillColor = Color.Transparent;
+            buttonCustomer.FillColor2 = Color.Transparent;
 
             buttonEmployee.FillColor = Color.Transparent;
             buttonEmployee.FillColor2 = Color.Transparent;
 
             buttonSettings.FillColor = Color.Transparent;
             buttonSettings.FillColor2 = Color.Transparent;
+
+            buttonRestock.FillColor = Color.Transparent;
+            buttonRestock.FillColor2 = Color.Transparent;
 
             LoadControl(new UserControlMedicine());
         }
@@ -143,41 +157,22 @@ namespace PharmacyManagementSystem
             buttonMedicine.FillColor = Color.Transparent;
             buttonMedicine.FillColor2 = Color.Transparent;
 
-            buttonSupplier.FillColor = Color.Transparent;
-            buttonSupplier.FillColor2 = Color.Transparent;
+            buttonCustomer.FillColor = Color.Transparent;
+            buttonCustomer.FillColor2 = Color.Transparent;
 
             buttonEmployee.FillColor = Color.Transparent;
             buttonEmployee.FillColor2 = Color.Transparent;
 
             buttonSettings.FillColor = Color.Transparent;
             buttonSettings.FillColor2 = Color.Transparent;
+
+            buttonRestock.FillColor = Color.Transparent;
+            buttonRestock.FillColor2 = Color.Transparent;
 
             LoadControl(new UserControldispense());
         }
 
-        private void buttonSupplier_Click(object sender, EventArgs e)
-        {
-            //to hightlight that it is selected
-            buttonSupplier.FillColor = Color.FromArgb(165, 207, 235);
-            buttonSupplier.FillColor2 = Color.FromArgb(165, 207, 235);
-
-            //change others to normal colour
-            buttonDashboard.FillColor = Color.Transparent;
-            buttonDashboard.FillColor2 = Color.Transparent;
-
-            buttonMedicine.FillColor = Color.Transparent;
-            buttonMedicine.FillColor2 = Color.Transparent;
-
-            buttonDispence.FillColor = Color.Transparent;
-            buttonDispence.FillColor2 = Color.Transparent;
-
-            buttonEmployee.FillColor = Color.Transparent;
-            buttonEmployee.FillColor2 = Color.Transparent;
-
-            buttonSettings.FillColor = Color.Transparent;
-            buttonSettings.FillColor2 = Color.Transparent;
-
-        }
+        
 
         private void buttonEmployee_Click(object sender, EventArgs e)
         {
@@ -196,11 +191,14 @@ namespace PharmacyManagementSystem
             buttonDispence.FillColor = Color.Transparent;
             buttonDispence.FillColor2 = Color.Transparent;
 
-            buttonSupplier.FillColor = Color.Transparent;
-            buttonSupplier.FillColor2 = Color.Transparent;
+            buttonCustomer.FillColor = Color.Transparent;
+            buttonCustomer.FillColor2 = Color.Transparent;
 
             buttonSettings.FillColor = Color.Transparent;
             buttonSettings.FillColor2 = Color.Transparent;
+
+            buttonRestock.FillColor = Color.Transparent;
+            buttonRestock.FillColor2 = Color.Transparent;
 
             LoadControl(new UserControlEmployee());
             
@@ -223,15 +221,71 @@ namespace PharmacyManagementSystem
             buttonDispence.FillColor = Color.Transparent;
             buttonDispence.FillColor2 = Color.Transparent;
 
-            buttonSupplier.FillColor = Color.Transparent;
-            buttonSupplier.FillColor2 = Color.Transparent;
+            buttonCustomer.FillColor = Color.Transparent;
+            buttonCustomer.FillColor2 = Color.Transparent;
 
             buttonEmployee.FillColor = Color.Transparent;
             buttonEmployee.FillColor2 = Color.Transparent;
 
+            
+            buttonRestock.FillColor = Color.Transparent;
+            buttonRestock.FillColor2 = Color.Transparent;
+
             LoadControl(new UserControlSettings());
         }
 
-        
+        private void buttonCustomer_Click(object sender, EventArgs e)
+        {
+            //to hightlight that it is selected
+            buttonCustomer.FillColor = Color.FromArgb(165, 207, 235);
+            buttonCustomer.FillColor2 = Color.FromArgb(165, 207, 235);
+
+            //change others to normal colour
+            buttonDashboard.FillColor = Color.Transparent;
+            buttonDashboard.FillColor2 = Color.Transparent;
+
+            buttonMedicine.FillColor = Color.Transparent;
+            buttonMedicine.FillColor2 = Color.Transparent;
+
+            buttonDispence.FillColor = Color.Transparent;
+            buttonDispence.FillColor2 = Color.Transparent;
+
+            buttonEmployee.FillColor = Color.Transparent;
+            buttonEmployee.FillColor2 = Color.Transparent;
+
+            buttonSettings.FillColor = Color.Transparent;
+            buttonSettings.FillColor2 = Color.Transparent;
+
+            buttonRestock.FillColor = Color.Transparent;
+            buttonRestock.FillColor2 = Color.Transparent;
+
+            LoadControl(new UserControlCustomer());
+        }
+
+        private void buttonRestock_Click(object sender, EventArgs e)
+        {
+            buttonRestock.FillColor = Color.FromArgb(165, 207, 235);
+            buttonRestock.FillColor2 = Color.FromArgb(165, 207, 235);
+
+            buttonDashboard.FillColor = Color.Transparent;
+            buttonDashboard.FillColor2 = Color.Transparent;
+
+            buttonMedicine.FillColor = Color.Transparent;
+            buttonMedicine.FillColor2 = Color.Transparent;
+
+            buttonDispence.FillColor = Color.Transparent;
+            buttonDispence.FillColor2 = Color.Transparent;
+
+            buttonCustomer.FillColor = Color.Transparent;
+            buttonCustomer.FillColor2 = Color.Transparent;
+
+            buttonEmployee.FillColor = Color.Transparent;
+            buttonEmployee.FillColor2 = Color.Transparent;
+
+            buttonSettings.FillColor = Color.Transparent;
+            buttonSettings.FillColor2 = Color.Transparent;
+
+            LoadControl(new UserControlRestock());
+        }
     }
 }

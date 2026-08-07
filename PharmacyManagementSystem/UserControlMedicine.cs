@@ -24,6 +24,9 @@ namespace PharmacyManagementSystem
         {
             buttonClearSearchBar.Hide();
             loadMedicineDGV();
+
+            //loads next medicine id to the text box
+            loadNextPrimaryKey();
         }
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
@@ -141,11 +144,12 @@ namespace PharmacyManagementSystem
 
             if (result == DialogResult.Yes)
             {
-                //enable the primary key textbox
-                textBoxMedicineID.Enabled = true;
+                
+
+                //loads next primary key
+                loadNextPrimaryKey();
 
                 //clear all textboxes
-                textBoxMedicineID.Clear();
                 textBoxMedicineName.Clear();
                 numericUpDownQuantity.Value = 1;
                 numericUpDownSellingPrice.Value = 1;
@@ -212,6 +216,17 @@ namespace PharmacyManagementSystem
                         addComm.ExecuteNonQuery();
                         MessageBox.Show("Medicine " + textBoxMedicineName.Text + "(" + textBoxMedicineID.Text + ")" + " added successfully.", "Success");
                         loadMedicineDGV();
+
+                        //peroform a clear
+                        //loads next primary key
+                        loadNextPrimaryKey();
+
+                        //clear all textboxes
+                        textBoxMedicineName.Clear();
+                        numericUpDownQuantity.Value = 1;
+                        numericUpDownSellingPrice.Value = 1;
+                        numericUpDownBuyingPrice.Value = 1;
+                        numericUpDownLowStockWarning.Value = 1;
                     }
                     DBObj.disconnect();
 
@@ -221,6 +236,19 @@ namespace PharmacyManagementSystem
             {
                 MessageBox.Show("Something went worng. Try again \n\n" + ex.Message);
             }
+        }
+
+        public void loadNextPrimaryKey()
+        {
+            //getting last medicine id
+            DBConnection DBObj = new DBConnection();
+            string sql = "SELECT TOP 1 MedicineID FROM Medicine ORDER BY MedicineID DESC";
+            SqlCommand cmd = new SqlCommand(sql, DBObj.connect());
+            SqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            //add a one to last medicine id (next medicine id = last medicine id + 1)
+            textBoxMedicineID.Text = Convert.ToString(Convert.ToInt32(reader["MedicineID"]) + 1);
+            DBObj.disconnect();
         }
 
         private void textBoxMedicineID_TextChanged(object sender, EventArgs e)
@@ -268,6 +296,16 @@ namespace PharmacyManagementSystem
                     loadMedicineDGV();
                     //disconnect db
                     DBObj.disconnect();
+                    //peroform a clear
+                    //loads next primary key
+                    loadNextPrimaryKey();
+
+                    //clear all textboxes
+                    textBoxMedicineName.Clear();
+                    numericUpDownQuantity.Value = 1;
+                    numericUpDownSellingPrice.Value = 1;
+                    numericUpDownBuyingPrice.Value = 1;
+                    numericUpDownLowStockWarning.Value = 1;
                 }
             }
             catch (Exception ex)
@@ -301,6 +339,16 @@ namespace PharmacyManagementSystem
                         com.ExecuteNonQuery();
                         MessageBox.Show(textBoxMedicineName.Text + " has been deleted successfully.", "Success");
                         loadMedicineDGV();
+
+                        //loads next primary key
+                        loadNextPrimaryKey();
+
+                        //clear all textboxes
+                        textBoxMedicineName.Clear();
+                        numericUpDownQuantity.Value = 1;
+                        numericUpDownSellingPrice.Value = 1;
+                        numericUpDownBuyingPrice.Value = 1;
+                        numericUpDownLowStockWarning.Value = 1;
                     }
                 }
                 else

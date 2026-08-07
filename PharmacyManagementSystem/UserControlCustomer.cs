@@ -23,6 +23,9 @@ namespace PharmacyManagementSystem
             comboBoxGender.SelectedIndex = 0;
             buttonClearSearchBar.Hide();
             loadCustomerDGV();
+
+            //loads next customer id to the text box
+            loadNextPrimaryKey();
         }
 
         public void loadCustomerDGV()
@@ -203,6 +206,23 @@ namespace PharmacyManagementSystem
                         addComm.ExecuteNonQuery();
                         MessageBox.Show("Customer " + textBoxCustomerName.Text + "(" + textBoxCustomerID.Text + ") added successfully.", "Success");
                         loadCustomerDGV();
+
+                        //load next primary key
+                        loadNextPrimaryKey();
+
+                        //clear all
+                        textBoxCustomerName.Text = "";
+                        textBoxAddress.Text = "";
+                        textBoxPhone.Text = "";
+                        comboBoxGender.SelectedIndex = 0;
+                        dateTimePickerDOB.Value = DateTime.Now;
+
+                        //hide error labels
+                        labelErrorCustomerID.Hide();
+                        labelErrorCustomerName.Hide();
+                        labelErrorAddress.Hide();
+                        labelErrorPhone.Hide();
+                        labelErrorGender.Hide();
                     }
                     DBObj.disconnect();
                 }
@@ -211,6 +231,19 @@ namespace PharmacyManagementSystem
             {
                 MessageBox.Show("Something went worng. Try again \n\n" + ex.Message);
             }
+        }
+
+        public void loadNextPrimaryKey()
+        {
+            //getting last customer id
+            DBConnection DBObj = new DBConnection();
+            string sql = "SELECT TOP 1 CustomerID FROM Customer ORDER BY CustomerID DESC";
+            SqlCommand cmd = new SqlCommand(sql, DBObj.connect());
+            SqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            //add a one to last customer id (next customer id = last customer id + 1)
+            textBoxCustomerID.Text = Convert.ToString(Convert.ToInt32(reader["CustomerID"]) + 1);
+            DBObj.disconnect();
         }
 
         private void textBoxCustomerID_TextChanged(object sender, EventArgs e)
@@ -304,6 +337,23 @@ namespace PharmacyManagementSystem
                     MessageBox.Show("Customer " + textBoxCustomerName.Text + "(" + textBoxCustomerID.Text + ") updated successfully.", "Success");
                     loadCustomerDGV();
 
+                    //load next primary key
+                    loadNextPrimaryKey();
+
+                    //clear all
+                    textBoxCustomerName.Text = "";
+                    textBoxAddress.Text = "";
+                    textBoxPhone.Text = "";
+                    comboBoxGender.SelectedIndex = 0;
+                    dateTimePickerDOB.Value = DateTime.Now;
+
+                    //hide error labels
+                    labelErrorCustomerID.Hide();
+                    labelErrorCustomerName.Hide();
+                    labelErrorAddress.Hide();
+                    labelErrorPhone.Hide();
+                    labelErrorGender.Hide();
+
                     dbObj.disconnect();
                 }
             }
@@ -345,6 +395,23 @@ namespace PharmacyManagementSystem
                         com.ExecuteNonQuery();
                         MessageBox.Show(textBoxCustomerName.Text + " has been deleted successfully.", "Success");
                         loadCustomerDGV();
+
+                        //load next primary key
+                        loadNextPrimaryKey();
+
+                        //clear all
+                        textBoxCustomerName.Text = "";
+                        textBoxAddress.Text = "";
+                        textBoxPhone.Text = "";
+                        comboBoxGender.SelectedIndex = 0;
+                        dateTimePickerDOB.Value = DateTime.Now;
+
+                        //hide error labels
+                        labelErrorCustomerID.Hide();
+                        labelErrorCustomerName.Hide();
+                        labelErrorAddress.Hide();
+                        labelErrorPhone.Hide();
+                        labelErrorGender.Hide();
                     }
                 }
                 else
@@ -373,11 +440,10 @@ namespace PharmacyManagementSystem
 
             if (result == DialogResult.Yes)
             {
-                //enable the primary key textbox
-                textBoxCustomerID.Enabled = true;
+                //loads next customer id to the text box
+                loadNextPrimaryKey();
 
-                //clear all 
-                textBoxCustomerID.Text = "";
+                //clear all
                 textBoxCustomerName.Text = "";
                 textBoxAddress.Text = "";
                 textBoxPhone.Text = "";

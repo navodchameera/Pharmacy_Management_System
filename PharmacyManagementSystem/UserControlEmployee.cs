@@ -29,6 +29,9 @@ namespace PharmacyManagementSystem
             comboBoxShift.SelectedIndex = 0;
             buttonClearSearchBar.Hide();
             loadEmployeeDGV();
+
+            //loads next employee id to the text box
+            loadNextPrimaryKey();
         }
 
         public void loadEmployeeDGV()
@@ -174,7 +177,20 @@ namespace PharmacyManagementSystem
                 MessageBox.Show("Something went worng. Try again \n\n" + ex.Message);
                 return false;
             }
-            
+
+        }
+
+        public void loadNextPrimaryKey()
+        {
+            //getting last employee id
+            DBConnection DBObj = new DBConnection();
+            string sql = "SELECT TOP 1 EmployeeID FROM Employee ORDER BY EmployeeID DESC";
+            SqlCommand cmd = new SqlCommand(sql, DBObj.connect());
+            SqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            //add a one to last employee id (next employee id = last employee id + 1)
+            textBoxEmployeeID.Text = Convert.ToString(Convert.ToInt32(reader["EmployeeID"]) + 1);
+            DBObj.disconnect();
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -242,6 +258,29 @@ namespace PharmacyManagementSystem
                         MessageBox.Show("Employee " + textBoxEmployeeName.Text + "("+textBoxEmployeeID.Text+") added successfully." +
                             "\n\nDefault password is 'staff123'. users can change it later", "Success");
                         loadEmployeeDGV();
+
+                        //loads next primary key 
+                        loadNextPrimaryKey();
+
+                        //clear all
+                        textBoxEmployeeName.Text = "";
+                        textBoxUsername.Text = "";
+                        textBoxAddress.Text = "";
+                        textBoxPhone.Text = "";
+                        comboBoxGender.SelectedIndex = 0;
+                        comboBoxShift.SelectedIndex = 0;
+                        dateTimePickerDOB.Value = DateTime.Now;
+                        numericUpDownSalary.Value = 1000;
+                        checkBoxAdminAccess.Checked = false;
+
+                        //hide error labels
+                        labelErrorEmployeeID.Hide();
+                        labelErrorEmployeeName.Hide();
+                        labelErrorUsername.Hide();
+                        labelErrorAddress.Hide();
+                        labelErrorPhone.Hide();
+                        labelErrorGender.Hide();
+                        labelErrorShift.Hide(); ;
                     }
                     DBObj.disconnect();
                 }
@@ -422,6 +461,30 @@ namespace PharmacyManagementSystem
                         comObj.ExecuteNonQuery();
                         MessageBox.Show("Employee " + textBoxEmployeeName.Text + "(" + textBoxEmployeeID.Text + ") updated successfully.", "Success");
                         loadEmployeeDGV();
+
+                        //loads next primary key 
+                        loadNextPrimaryKey();
+
+                        //clear all
+                        textBoxEmployeeName.Text = "";
+                        textBoxUsername.Text = "";
+                        textBoxAddress.Text = "";
+                        textBoxPhone.Text = "";
+                        comboBoxGender.SelectedIndex = 0;
+                        comboBoxShift.SelectedIndex = 0;
+                        dateTimePickerDOB.Value = DateTime.Now;
+                        numericUpDownSalary.Value = 1000;
+                        checkBoxAdminAccess.Checked = false;
+
+                        //hide error labels
+                        labelErrorEmployeeID.Hide();
+                        labelErrorEmployeeName.Hide();
+                        labelErrorUsername.Hide();
+                        labelErrorAddress.Hide();
+                        labelErrorPhone.Hide();
+                        labelErrorGender.Hide();
+                        labelErrorShift.Hide();
+
                     }
                     //user changed the username -> check if new username is available or not
                     else
@@ -433,6 +496,31 @@ namespace PharmacyManagementSystem
                             comObj.ExecuteNonQuery();
                             MessageBox.Show("Employee " + textBoxEmployeeName.Text + "(" + textBoxEmployeeID.Text + ") updated successfully.", "Success");
                             loadEmployeeDGV();
+                            //loads next primary key
+                            loadNextPrimaryKey();
+
+                            //loads next primary key 
+                            loadNextPrimaryKey();
+
+                            //clear all
+                            textBoxEmployeeName.Text = "";
+                            textBoxUsername.Text = "";
+                            textBoxAddress.Text = "";
+                            textBoxPhone.Text = "";
+                            comboBoxGender.SelectedIndex = 0;
+                            comboBoxShift.SelectedIndex = 0;
+                            dateTimePickerDOB.Value = DateTime.Now;
+                            numericUpDownSalary.Value = 1000;
+                            checkBoxAdminAccess.Checked = false;
+
+                            //hide error labels
+                            labelErrorEmployeeID.Hide();
+                            labelErrorEmployeeName.Hide();
+                            labelErrorUsername.Hide();
+                            labelErrorAddress.Hide();
+                            labelErrorPhone.Hide();
+                            labelErrorGender.Hide();
+                            labelErrorShift.Hide();
                         }
                         //if not say username alrerady exists
                         else
@@ -475,6 +563,29 @@ namespace PharmacyManagementSystem
                         com.ExecuteNonQuery();
                         MessageBox.Show(textBoxEmployeeName.Text + " has been deleted successfully.", "Success");
                         loadEmployeeDGV();
+                        //clears the inputs
+                        //loads next primary key 
+                        loadNextPrimaryKey();
+
+                        //clear all
+                        textBoxEmployeeName.Text = "";
+                        textBoxUsername.Text = "";
+                        textBoxAddress.Text = "";
+                        textBoxPhone.Text = "";
+                        comboBoxGender.SelectedIndex = 0;
+                        comboBoxShift.SelectedIndex = 0;
+                        dateTimePickerDOB.Value = DateTime.Now;
+                        numericUpDownSalary.Value = 1000;
+                        checkBoxAdminAccess.Checked = false;
+
+                        //hide error labels
+                        labelErrorEmployeeID.Hide();
+                        labelErrorEmployeeName.Hide();
+                        labelErrorUsername.Hide();
+                        labelErrorAddress.Hide();
+                        labelErrorPhone.Hide();
+                        labelErrorGender.Hide();
+                        labelErrorShift.Hide();
                     }
                 }
                 else
@@ -503,11 +614,11 @@ namespace PharmacyManagementSystem
 
             if (result == DialogResult.Yes)
             {
-                //enable the primary key textbox
-                textBoxEmployeeID.Enabled = true;
 
-                //clear all 
-                textBoxEmployeeID.Text = "";
+                //loads next primary key 
+                loadNextPrimaryKey();
+
+                //clear all
                 textBoxEmployeeName.Text = "";
                 textBoxUsername.Text = "";
                 textBoxAddress.Text = "";
